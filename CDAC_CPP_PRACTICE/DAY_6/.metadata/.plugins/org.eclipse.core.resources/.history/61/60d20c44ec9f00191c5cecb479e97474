@@ -1,0 +1,41 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 09-Mar-2019
+ *      Author: sunbeam
+ */
+#include<iostream>
+
+using namespace std;
+/*
+static void print(void)
+{
+	static int count=0;
+	count++;
+
+	cout<<"Count	:	"<<count<<endl;
+}
+
+int main(void)
+{
+
+	print();
+	print();
+	print();
+	print();
+}*/
+
+
+int main1()
+{
+
+	extern int num1;
+	cout<<"Num1:	"<<num1<<endl;
+	extern int num2;
+	//cout<<"Num2:	"<<num2<<endl;
+
+	void Display(void);
+	Display();
+	return 0;
+}
+

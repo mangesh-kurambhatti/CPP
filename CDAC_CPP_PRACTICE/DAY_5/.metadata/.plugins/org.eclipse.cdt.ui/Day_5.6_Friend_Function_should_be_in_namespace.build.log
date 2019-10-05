@@ -1,0 +1,6 @@
+17:31:55 **** Incremental Build of configuration Debug for project Day_5.6_Friend_Function_should_be_in_namespace ****
+make all 
+make: Nothing to be done for 'all'.
+
+17:31:56 Build Finished. 0 errors, 0 warnings. (took 435ms)
+

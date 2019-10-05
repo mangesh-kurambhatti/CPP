@@ -1,0 +1,17 @@
+15:05:01 **** Incremental Build of configuration Debug for project Day_9_cout_overloading ****
+make all 
+Building file: ../cout_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cout_overloading.d" -MT"cout_overloading.o" -o "cout_overloading.o" "../cout_overloading.cpp"
+../cout_overloading.cpp: In function ‘int main()’:
+../cout_overloading.cpp:57:12: error: conversion from ‘Complex()’ to non-scalar type ‘Complex’ requested
+ Complex c2=c1; //Complex
+            ^~
+../cout_overloading.cpp:58:11: warning: the address of ‘Complex c1()’ will never be NULL [-Waddress]
+ cout<<c2<<c1;
+           ^~
+make: *** [cout_overloading.o] Error 1
+subdir.mk:18: recipe for target 'cout_overloading.o' failed
+
+15:05:01 Build Failed. 3 errors, 1 warnings. (took 569ms)
+

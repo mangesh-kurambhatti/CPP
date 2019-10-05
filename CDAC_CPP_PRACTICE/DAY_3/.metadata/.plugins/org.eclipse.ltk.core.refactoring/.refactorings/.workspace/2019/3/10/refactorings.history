@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;24.Point_multifile/src/main.c&apos;" deleteContents="false" description="Delete resource &apos;24.Point_multifile/src/main.c&apos;" element1="/24.Point_multifile/src/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1551879251373"/>&#x0A;<refactoring comment="Delete resource &apos;24.Point_multifile/src/24.Point_multifile.cpp&apos;" deleteContents="false" description="Delete resource &apos;24.Point_multifile/src/24.Point_multifile.cpp&apos;" element1="/24.Point_multifile/src/24.Point_multifile.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1551890018620"/>
+</session>

@@ -1,0 +1,61 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 11-Mar-2019
+ *      Author: sunbeam
+ */
+#include<iostream>
+#include<string>
+
+class Date
+{
+private:
+	int day;
+	int month;
+	int year;
+public:
+	Date(void)
+	{
+		this->day=0;
+		this->month=0;
+		this->year=0;
+	}
+
+	Date(int day,int month,int year):day(day),month(month),year(year)
+	{}
+
+	void AcceptRecord(void)
+	{
+		cout<<"Day	:	"<<this->day;
+		cout<<"Month	:	"<<this->month;
+		cout<<"Year	:	"<<this->year;
+
+	}
+
+};
+class person{
+private :
+	string name;
+	int age;
+public:
+	person(void)
+	{
+		cout<<"	person(void)"<<endl;
+		this->name="";
+		this->age=0
+	}
+	person(string name,int age):name(name),age(age)
+		{
+			cout<<"	person(void)"<<endl;
+			this->name="";
+			this->age=0
+		}
+	void AcceptRecord()
+	{
+		cout<<"Day	:	"<<this->
+
+	}
+};
+
+
+

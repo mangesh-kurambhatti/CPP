@@ -1,0 +1,15 @@
+15:59:35 **** Incremental Build of configuration Debug for project Day_4.12 ****
+make all 
+Building file: ../allocate_mem_to_2-D_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocate_mem_to_2-D_array.d" -MT"allocate_mem_to_2-D_array.o" -o "allocate_mem_to_2-D_array.o" "../allocate_mem_to_2-D_array.cpp"
+Finished building: ../allocate_mem_to_2-D_array.cpp
+ 
+Building target: Day_4.12
+Invoking: GCC C++ Linker
+g++  -o "Day_4.12"  ./allocate_mem_to_2-D_array.o   
+Finished building target: Day_4.12
+ 
+
+15:59:35 Build Finished. 0 errors, 0 warnings. (took 666ms)
+

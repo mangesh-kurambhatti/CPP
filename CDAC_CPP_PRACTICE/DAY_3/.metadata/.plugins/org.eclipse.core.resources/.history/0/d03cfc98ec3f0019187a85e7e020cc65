@@ -1,0 +1,37 @@
+//============================================================================
+// Name        : 18_Exception_class.cpp
+// Author      : Mangesh
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Our own exception handling, Ansi-style
+//============================================================================
+#include<cstring>
+#include <iostream>
+using namespace std;
+
+
+class Exception{
+
+	private:
+				int lineno;
+				char errmsg[40];
+	public:
+
+				Exception(int lineno,char * errmsg)
+				{
+						this->lineno=lineno;
+						this->errmsg=errmsg;
+				}
+
+				~Exception()
+				{
+					this->lineno=0;
+					strcpy()
+
+				}
+
+
+};
+int main() {
+	return 0;
+}

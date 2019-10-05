@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Day_5.7_Friend_function_from_multiple_classes/Friend_function_from_multiple_file.cpp&apos; to &apos;Friend_function_from_multiple_classes.cpp&apos;" description="Rename resource &apos;Friend_function_from_multiple_file.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Friend_function_from_multiple_file.cpp" name="Friend_function_from_multiple_classes.cpp" stamp="1552046756635" updateReferences="true"/>
+</session>

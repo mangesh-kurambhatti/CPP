@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : Extern_C.cpp
+// Author      : Mangesh
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Extern C demo" << endl; // prints Extern C demo
+	return 0;
+}

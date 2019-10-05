@@ -1,0 +1,66 @@
+/*
+ * inheritance.cpp
+ *
+ *  Created on: 11-Mar-2019
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+#include<string>
+
+class Person{
+private:
+		string name;
+		int age;
+
+public:
+		Person(void)
+		{
+			cout<<"	Person(void)"<<endl;
+			this->name="";
+			this->age=0;
+		}
+
+		Person(string name,int age)
+		{
+			cout<<"	Person(string name,int age)"<<endl;
+			this->name=name;
+			this->age=age;
+
+		}
+
+		void ShowRecord(void)
+		{
+
+		cout<<"Name	:	"<<this->name<<endl;
+		cout<<"Age	:	"<<this->age<<endl;
+		}
+
+		void PrintRecord()
+		{
+			cout<<"Name	:	"<<this->name<<endl;
+			cout<<"Age	:	"<<this->age<<endl;
+		}
+
+};
+
+class Employee : public Person
+{
+private:
+		int empid;
+		float salary;
+public:
+		Employee(void)
+		{
+			this->empid=0;
+			this->salary=0.0;
+		}
+
+		Employee(int name,float salary)
+
+};
+int main()
+{
+
+}
+

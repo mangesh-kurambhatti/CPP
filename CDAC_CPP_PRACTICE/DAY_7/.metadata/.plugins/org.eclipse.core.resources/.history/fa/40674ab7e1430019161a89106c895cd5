@@ -1,0 +1,29 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 11-Mar-2019
+ *      Author: sunbeam
+ */
+#include<iostream>
+#include<string>
+class person{
+private :
+	string name;
+	int age;
+public:
+	person(void)
+	{
+		cout<<"	person(void)"<<endl;
+		this->name="";
+		this->age=0
+	}
+	person(string name,int age):name(name),age(age)
+		{
+			cout<<"	person(void)"<<endl;
+			this->name="";
+			this->age=0
+		}
+};
+
+
+

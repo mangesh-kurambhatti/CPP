@@ -1,0 +1,48 @@
+18:42:10 **** Build of configuration Debug for project AssignNo3.4_answer_matrix_menudriven ****
+make all 
+Building file: ../AssignN01.4_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignN01.4_answer.d" -MT"AssignN01.4_answer.o" -o "AssignN01.4_answer.o" "../AssignN01.4_answer.cpp"
+Finished building: ../AssignN01.4_answer.cpp
+ 
+Building file: ../AssignNo1.1_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.1_answer.d" -MT"AssignNo1.1_answer.o" -o "AssignNo1.1_answer.o" "../AssignNo1.1_answer.cpp"
+Finished building: ../AssignNo1.1_answer.cpp
+ 
+Building file: ../AssignNo1.2_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.2_answer.d" -MT"AssignNo1.2_answer.o" -o "AssignNo1.2_answer.o" "../AssignNo1.2_answer.cpp"
+Finished building: ../AssignNo1.2_answer.cpp
+ 
+Building file: ../AssignNo1.3_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.3_answer.d" -MT"AssignNo1.3_answer.o" -o "AssignNo1.3_answer.o" "../AssignNo1.3_answer.cpp"
+../AssignNo1.3_answer.cpp: In function ‘int main()’:
+../AssignNo1.3_answer.cpp:82:6: warning: unused variable ‘new_date’ [-Wunused-variable]
+  int new_date;
+      ^~~~~~~~
+Finished building: ../AssignNo1.3_answer.cpp
+ 
+Building file: ../AssignNo1.4_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.4_answer.d" -MT"AssignNo1.4_answer.o" -o "AssignNo1.4_answer.o" "../AssignNo1.4_answer.cpp"
+Finished building: ../AssignNo1.4_answer.cpp
+ 
+Building file: ../AssignNo1.5_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.5_answer.d" -MT"AssignNo1.5_answer.o" -o "AssignNo1.5_answer.o" "../AssignNo1.5_answer.cpp"
+../AssignNo1.5_answer.cpp:57:26: error: no ‘int tpoint::TPoint::GetSum() const’ member function declared in class ‘tpoint::TPoint’
+  int TPoint::GetSum(void)const
+                          ^~~~~
+../AssignNo1.5_answer.cpp:67:9: error: prototype for ‘tpoint::TPoint tpoint::TPoint::Sum(tpoint::TPoint)’ does not match any in class ‘tpoint::TPoint’
+  TPoint TPoint::Sum(TPoint t)
+         ^~~~~~
+../AssignNo1.5_answer.cpp:32:11: error: candidate is: tpoint::TPoint tpoint::TPoint::Sum()
+    TPoint Sum();
+           ^~~
+make: *** [AssignNo1.5_answer.o] Error 1
+subdir.mk:39: recipe for target 'AssignNo1.5_answer.o' failed
+
+18:42:11 Build Failed. 5 errors, 1 warnings. (took 1s.124ms)
+

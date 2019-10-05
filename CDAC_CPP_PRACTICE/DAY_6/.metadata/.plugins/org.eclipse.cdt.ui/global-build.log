@@ -1,0 +1,37 @@
+18:18:30 **** Clean-only build of configuration Debug for project Day_6.2_storage_class_example ****
+make clean 
+rm -rf  ./main.o ./test.o  ./main.d ./test.d  Day_6.2_storage_class_example
+ 
+18:19:24 **** Build of configuration Debug for project Day_6.2_storage_class_example ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:34:13: warning: unused variable ‘num2’ [-Wunused-variable]
+  extern int num2;
+             ^~~~
+Finished building: ../main.cpp
+ 
+Building file: ../test.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.o" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: Day_6.2_storage_class_example
+Invoking: GCC C++ Linker
+g++  -o "Day_6.2_storage_class_example"  ./main.o ./test.o   
+Finished building target: Day_6.2_storage_class_example
+ 
+18:21:24 **** Incremental Build of configuration Debug for project Day_6.2_storage_class_example ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_6.2_storage_class_example
+Invoking: GCC C++ Linker
+g++  -o "Day_6.2_storage_class_example"  ./main.o ./test.o   
+Finished building target: Day_6.2_storage_class_example
+ 

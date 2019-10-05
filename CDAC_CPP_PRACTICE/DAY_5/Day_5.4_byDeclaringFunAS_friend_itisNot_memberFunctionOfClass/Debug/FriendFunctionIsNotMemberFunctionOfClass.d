@@ -1,0 +1,2 @@
+FriendFunctionIsNotMemberFunctionOfClass.o: \
+ ../FriendFunctionIsNotMemberFunctionOfClass.cpp

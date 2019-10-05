@@ -1,0 +1,15 @@
+18:21:24 **** Incremental Build of configuration Debug for project Day_6.2_storage_class_example ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_6.2_storage_class_example
+Invoking: GCC C++ Linker
+g++  -o "Day_6.2_storage_class_example"  ./main.o ./test.o   
+Finished building target: Day_6.2_storage_class_example
+ 
+
+18:21:25 Build Finished. 0 errors, 0 warnings. (took 827ms)
+

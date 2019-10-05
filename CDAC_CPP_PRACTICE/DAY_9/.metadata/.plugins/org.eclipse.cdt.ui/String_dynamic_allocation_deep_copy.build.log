@@ -1,0 +1,6 @@
+23:19:16 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+
+23:19:16 Build Finished. 0 errors, 0 warnings. (took 314ms)
+

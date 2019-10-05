@@ -1,0 +1,2 @@
+checking_malloc_returning_null_and_new_return_bad_alloc.o: \
+ ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp

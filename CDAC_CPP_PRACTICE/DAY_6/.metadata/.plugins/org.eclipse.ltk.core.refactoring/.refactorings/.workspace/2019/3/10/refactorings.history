@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Day_6.2_storage_class_example.cpp&apos; to &apos;Day_6.2_storage_class_example&apos;" description="Rename resource &apos;Day_6.2_storage_class_example.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Day_6.2_storage_class_example.cpp" name="Day_6.2_storage_class_example" stamp="1552123827040" updateReferences="true"/>
+</session>

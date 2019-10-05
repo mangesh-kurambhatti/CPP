@@ -1,0 +1,15 @@
+15:42:36 **** Incremental Build of configuration Debug for project Day_5.2_Dynamic_Array ****
+make all 
+Building file: ../dynamic_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic_array.d" -MT"dynamic_array.o" -o "dynamic_array.o" "../dynamic_array.cpp"
+Finished building: ../dynamic_array.cpp
+ 
+Building target: Day_5.2_Dynamic_Array
+Invoking: GCC C++ Linker
+g++  -o "Day_5.2_Dynamic_Array"  ./dynamic_array.o   
+Finished building target: Day_5.2_Dynamic_Array
+ 
+
+15:42:36 Build Finished. 0 errors, 0 warnings. (took 754ms)
+

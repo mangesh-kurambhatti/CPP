@@ -1,0 +1,1 @@
+SameFunctionInMultipleClasses.o: ../SameFunctionInMultipleClasses.cpp

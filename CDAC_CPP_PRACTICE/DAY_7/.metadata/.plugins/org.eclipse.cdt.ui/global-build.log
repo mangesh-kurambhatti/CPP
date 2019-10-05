@@ -1,0 +1,1536 @@
+15:24:34 **** Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In constructor ‘Employee::Employee()’:
+../main.cpp:59:3: error: expected ‘;’ before ‘this’
+   this->salary=0;
+   ^~~~
+../main.cpp:60:18: error: no match for ‘operator=’ (operand types are ‘Date’ and ‘int’)
+   this->JoinDate=0;
+                  ^
+../main.cpp:12:7: note: candidate: constexpr Date& Date::operator=(const Date&)
+ class Date
+       ^~~~
+../main.cpp:12:7: note:   no known conversion for argument 1 from ‘int’ to ‘const Date&’
+../main.cpp:12:7: note: candidate: constexpr Date& Date::operator=(Date&&)
+../main.cpp:12:7: note:   no known conversion for argument 1 from ‘int’ to ‘Date&&’
+../main.cpp: In member function ‘void Employee::AcceptRecord()’:
+../main.cpp:78:6: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘void’)
+   cin>>JoinDate.AcceptRecord();
+   ~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/istream:120:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/istream:120:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/7/istream:124:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/istream:124:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/istream:131:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/istream:131:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/istream:168:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(bool& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool&’
+/usr/include/c++/7/istream:172:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(short& __n);
+       ^~~~~~~~
+/usr/include/c++/7/istream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘short int&’
+/usr/include/c++/7/istream:175:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned short& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:175:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int&’
+/usr/include/c++/7/istream:179:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]
+       operator>>(int& __n);
+       ^~~~~~~~
+/usr/include/c++/7/istream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘int&’
+/usr/include/c++/7/istream:182:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned int& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:182:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int&’
+/usr/include/c++/7/istream:186:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:186:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int&’
+/usr/include/c++/7/istream:190:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int&’
+/usr/include/c++/7/istream:195:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long long& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:195:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int&’
+/usr/include/c++/7/istream:199:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(unsigned long long& __n)
+       ^~~~~~~~
+/usr/include/c++/7/istream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int&’
+/usr/include/c++/7/istream:214:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^~~~~~~~
+/usr/include/c++/7/istream:214:7: note:   no known conversion for argument 1 from ‘void’ to ‘float&’
+/usr/include/c++/7/istream:218:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^~~~~~~~
+/usr/include/c++/7/istream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double&’
+/usr/include/c++/7/istream:222:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^~~~~~~~
+/usr/include/c++/7/istream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double&’
+/usr/include/c++/7/istream:235:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(void*& __p)
+       ^~~~~~~~
+/usr/include/c++/7/istream:235:7: note:   no known conversion for argument 1 from ‘void’ to ‘void*&’
+/usr/include/c++/7/istream:259:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^~~~~~~~
+/usr/include/c++/7/istream:259:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:53:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/basic_string.tcc:1465:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.tcc:1465:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:30: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+   cin>>JoinDate.AcceptRecord();
+                              ^
+In file included from /usr/include/c++/7/istream:991:0,
+                 from /usr/include/c++/7/iostream:40,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/istream.tcc:963:5: note: candidate: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/istream.tcc:963:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:30: note:   mismatched types ‘_CharT2*’ and ‘void’
+   cin>>JoinDate.AcceptRecord();
+                              ^
+In file included from /usr/include/c++/7/istream:991:0,
+                 from /usr/include/c++/7/iostream:40,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/istream.tcc:931:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^~~~~~~~
+/usr/include/c++/7/bits/istream.tcc:931:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:30: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+   cin>>JoinDate.AcceptRecord();
+                              ^
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/istream:756:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^~~~~~~~
+/usr/include/c++/7/istream:756:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::AcceptRecord()’ (type ‘void’) to type ‘unsigned char&’
+   cin>>JoinDate.AcceptRecord();
+        ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/istream:761:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+subdir.mk:18: recipe for target 'main.o' failed
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^~~~~~~~
+/usr/include/c++/7/istream:761:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::AcceptRecord()’ (type ‘void’) to type ‘signed char&’
+   cin>>JoinDate.AcceptRecord();
+        ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/istream:803:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/istream:803:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::AcceptRecord()’ (type ‘void’) to type ‘unsigned char*’
+   cin>>JoinDate.AcceptRecord();
+        ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/istream:808:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/istream:808:5: note:   template argument deduction/substitution failed:
+../main.cpp:78:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::AcceptRecord()’ (type ‘void’) to type ‘signed char*’
+   cin>>JoinDate.AcceptRecord();
+        ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/istream:980:5: note: candidate: template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&)
+     operator>>(_Istream&& __is, _Tp&& __x)
+     ^~~~~~~~
+/usr/include/c++/7/istream:980:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/istream: In substitution of ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = void]’:
+../main.cpp:78:30:   required from here
+/usr/include/c++/7/istream:980:5: error: forming reference to void
+../main.cpp: In member function ‘void Employee::ShowRecord()’:
+../main.cpp:86:21: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘Date’)
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:108:7: note:   no known conversion for argument 1 from ‘Date’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/7/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:117:7: note:   no known conversion for argument 1 from ‘Date’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:127:7: note:   no known conversion for argument 1 from ‘Date’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:166:7: note:   no known conversion for argument 1 from ‘Date’ to ‘long int’
+/usr/include/c++/7/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:170:7: note:   no known conversion for argument 1 from ‘Date’ to ‘long unsigned int’
+/usr/include/c++/7/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:174:7: note:   no known conversion for argument 1 from ‘Date’ to ‘bool’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘Date’ to ‘short int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:181:7: note:   no known conversion for argument 1 from ‘Date’ to ‘short unsigned int’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘Date’ to ‘int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:192:7: note:   no known conversion for argument 1 from ‘Date’ to ‘unsigned int’
+/usr/include/c++/7/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:201:7: note:   no known conversion for argument 1 from ‘Date’ to ‘long long int’
+/usr/include/c++/7/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:205:7: note:   no known conversion for argument 1 from ‘Date’ to ‘long long unsigned int’
+/usr/include/c++/7/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:220:7: note:   no known conversion for argument 1 from ‘Date’ to ‘double’
+/usr/include/c++/7/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:224:7: note:   no known conversion for argument 1 from ‘Date’ to ‘float’
+/usr/include/c++/7/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:232:7: note:   no known conversion for argument 1 from ‘Date’ to ‘long double’
+/usr/include/c++/7/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:245:7: note:   no known conversion for argument 1 from ‘Date’ to ‘const void*’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘Date’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6275:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6275:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   ‘Date’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                             ^~~~~~~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+/usr/include/c++/7/system_error:217:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘const std::error_code&’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:497:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘Date’)
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                             ^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:502:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘char’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:508:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘char’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:514:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘signed char’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:519:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘unsigned char’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:539:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   mismatched types ‘const _CharT*’ and ‘Date’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                             ^~~~~~~~
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘const char*’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:556:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘const char*’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:569:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘const signed char*’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:574:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:29: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate’ (type ‘Date’) to type ‘const unsigned char*’
+  cout<<"JoinDate : "<<this->JoinDate<<endl;
+                       ~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:682:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:682:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = Date]’:
+../main.cpp:86:29:   required from here
+/usr/include/c++/7/ostream:682:5: error: no type named ‘type’ in ‘struct std::enable_if<false, std::basic_ostream<char>&>’
+make: *** [main.o] Error 1
+15:25:56 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In constructor ‘Employee::Employee()’:
+../main.cpp:59:3: error: expected ‘;’ before ‘this’
+   this->salary=0.0;
+   ^~~~
+../main.cpp: In member function ‘void Employee::ShowRecord()’:
+../main.cpp:86:21: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘void’)
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/7/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/7/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/7/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/7/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/7/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/7/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/7/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/7/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/7/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6275:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6275:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:46: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                                              ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+/usr/include/c++/7/system_error:217:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘const std::error_code&’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:497:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:46: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                                              ^
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:502:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘char’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:508:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘char’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:514:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘signed char’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:519:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘unsigned char’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:539:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:46: note:   mismatched types ‘const _CharT*’ and ‘void’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                                              ^
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:7:
+/usr/include/c++/7/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘const char*’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:556:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘const char*’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:569:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘const signed char*’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+/usr/include/c++/7/ostream:574:5: note:   template argument deduction/substitution failed:
+../main.cpp:86:45: note:   cannot convert ‘((Employee*)this)->Employee::JoinDate.Date::EnteredRecord()’ (type ‘void’) to type ‘const unsigned char*’
+  cout<<"JoinDate : "<<JoinDate.EnteredRecord()<<endl;
+                       ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../main.cpp:7:
+/usr/include/c++/7/ostream:682:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:682:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = void]’:
+../main.cpp:86:46:   required from here
+/usr/include/c++/7/ostream:682:5: error: forming reference to void
+make: *** [main.o] Error 1
+15:26:36 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In constructor ‘Employee::Employee()’:
+../main.cpp:59:3: error: expected ‘;’ before ‘this’
+   this->salary=0.0;
+   ^~~~
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+15:27:14 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In constructor ‘Employee::Employee()’:
+../main.cpp:59:3: error: expected ‘;’ before ‘this’
+   this->salary=0.0;
+   ^~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:27:37 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_7.1_inheritance_without_inheriting
+Invoking: GCC C++ Linker
+g++  -o "Day_7.1_inheritance_without_inheriting"  ./main.o   
+Finished building target: Day_7.1_inheritance_without_inheriting
+ 
+15:27:49 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:33 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_7.1_inheritance_without_inheriting
+Invoking: GCC C++ Linker
+g++  -o "Day_7.1_inheritance_without_inheriting"  ./main.o   
+Finished building target: Day_7.1_inheritance_without_inheriting
+ 
+15:30:41 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_7.1_inheritance_without_inheriting
+Invoking: GCC C++ Linker
+g++  -o "Day_7.1_inheritance_without_inheriting"  ./main.o   
+Finished building target: Day_7.1_inheritance_without_inheriting
+ 
+15:30:43 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:54 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:100:37: error: no matching function for call to ‘Employee::Employee(std::__cxx11::string&, int&, float&, int, int, int)’
+  Employee e(name,age,salary,17,12,15);
+                                     ^
+../main.cpp:62:2: note: candidate: Employee::Employee(std::__cxx11::string, int, float, Date)
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(JoinDate)
+  ^~~~~~~~
+../main.cpp:62:2: note:   candidate expects 4 arguments, 6 provided
+../main.cpp:54:2: note: candidate: Employee::Employee()
+  Employee(void)
+  ^~~~~~~~
+../main.cpp:54:2: note:   candidate expects 0 arguments, 6 provided
+../main.cpp:46:7: note: candidate: Employee::Employee(const Employee&)
+ class Employee{
+       ^~~~~~~~
+../main.cpp:46:7: note:   candidate expects 1 argument, 6 provided
+../main.cpp:46:7: note: candidate: Employee::Employee(Employee&&)
+../main.cpp:46:7: note:   candidate expects 1 argument, 6 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:34:21 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_7.1_inheritance_without_inheriting
+Invoking: GCC C++ Linker
+g++  -o "Day_7.1_inheritance_without_inheriting"  ./main.o   
+Finished building target: Day_7.1_inheritance_without_inheriting
+ 
+15:35:34 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:96:40: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int, int, int)’
+  e.ShowRecord("abc",12,12345,12,12,1996);
+                                        ^
+../main.cpp:81:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:81:7: note:   candidate expects 0 arguments, 6 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:37:45 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:70:2: error: ‘Employee::Employee(std::__cxx11::string, int, float, Date)’ cannot be overloaded
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(12,12,1996)
+  ^~~~~~~~
+../main.cpp:64:2: error: with ‘Employee::Employee(std::__cxx11::string, int, float, Date)’
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(JoinDate)
+  ^~~~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:40: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int, int, int)’
+  e.ShowRecord("abc",12,12345,12,12,1996);
+                                        ^
+../main.cpp:90:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:90:7: note:   candidate expects 0 arguments, 6 provided
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+15:39:23 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:70:2: error: ‘Employee::Employee(std::__cxx11::string, int, float, Date)’ cannot be overloaded
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(12,12,1996)
+  ^~~~~~~~
+../main.cpp:64:2: error: with ‘Employee::Employee(std::__cxx11::string, int, float, Date)’
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(JoinDate)
+  ^~~~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:34: warning: left operand of comma operator has no effect [-Wunused-value]
+  e.ShowRecord("abc",12,12345,(12,12,1996));
+                                  ^~
+../main.cpp:105:37: warning: right operand of comma operator has no effect [-Wunused-value]
+  e.ShowRecord("abc",12,12345,(12,12,1996));
+                                     ^~~~
+../main.cpp:105:42: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int)’
+  e.ShowRecord("abc",12,12345,(12,12,1996));
+                                          ^
+../main.cpp:90:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:90:7: note:   candidate expects 0 arguments, 4 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:42:21 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:70:2: error: ‘Employee::Employee(std::__cxx11::string, int, float, Date)’ cannot be overloaded
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(day,month,year)
+  ^~~~~~~~
+../main.cpp:64:2: error: with ‘Employee::Employee(std::__cxx11::string, int, float, Date)’
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(JoinDate)
+  ^~~~~~~~
+../main.cpp: In constructor ‘Employee::Employee(std::__cxx11::string, int, float, Date)’:
+../main.cpp:70:109: error: ‘day’ was not declared in this scope
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(day,month,year)
+                                                                                                             ^~~
+../main.cpp:70:113: error: ‘month’ was not declared in this scope
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(day,month,year)
+                                                                                                                 ^~~~~
+../main.cpp:70:119: error: ‘year’ was not declared in this scope
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(day,month,year)
+                                                                                                                       ^~~~
+../main.cpp:70:119: note: suggested alternative: ‘char’
+  Employee(string name,int empid,float salary,Date JoinDate):name(name),empid(empid),salary(salary),JoinDate(day,month,year)
+                                                                                                                       ^~~~
+                                                                                                                       char
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:40: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int, int, int)’
+  e.ShowRecord("abc",12,12345,12,12,1996);
+                                        ^
+../main.cpp:90:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:90:7: note:   candidate expects 0 arguments, 6 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:43:00 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:40: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int, int, int)’
+  e.ShowRecord("abc",12,12345,12,12,1996);
+                                        ^
+../main.cpp:90:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:90:7: note:   candidate expects 0 arguments, 6 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:44:47 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:40: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int, int, int)’
+  e.ShowRecord("abc",12,12345,12,12,1996);
+                                        ^
+../main.cpp:90:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:90:7: note:   candidate expects 0 arguments, 6 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:45:54 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:40: error: no matching function for call to ‘Employee::ShowRecord(const char [4], int, int, int, int, int)’
+  e.ShowRecord("abc",12,12345,12,12,1996);
+                                        ^
+../main.cpp:90:7: note: candidate: void Employee::ShowRecord()
+  void ShowRecord()
+       ^~~~~~~~~~
+../main.cpp:90:7: note:   candidate expects 0 arguments, 6 provided
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:47:38 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:105:4: error: invalid use of non-static member function ‘void Employee::ShowRecord()’
+  e.ShowRecord;
+  ~~^~~~~~~~~~
+../main.cpp:90:7: note: declared here
+  void ShowRecord()
+       ^~~~~~~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:47:45 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_7.1_inheritance_without_inheriting
+Invoking: GCC C++ Linker
+g++  -o "Day_7.1_inheritance_without_inheriting"  ./main.o   
+Finished building target: Day_7.1_inheritance_without_inheriting
+ 
+15:47:49 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:08 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Day_7.1_inheritance_without_inheriting
+Invoking: GCC C++ Linker
+g++  -o "Day_7.1_inheritance_without_inheriting"  ./main.o   
+Finished building target: Day_7.1_inheritance_without_inheriting
+ 
+15:49:11 **** Incremental Build of configuration Debug for project Day_7.1_inheritance_without_inheriting ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:38 **** Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+16:29:50 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:20 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:07 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:12:09 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:06 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:13:09 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:54 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:05 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:19:02 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+../inheritance.cpp: In function ‘int main()’:
+../inheritance.cpp:90:32: error: no matching function for call to ‘Employee::Employee(const char [4], int, int, int)’
+  Employee e("ABC",23,1564,35000);
+                                ^
+../inheritance.cpp:64:3: note: candidate: Employee::Employee(int, float)
+   Employee(int empid,float salary)
+   ^~~~~~~~
+../inheritance.cpp:64:3: note:   candidate expects 2 arguments, 4 provided
+../inheritance.cpp:57:3: note: candidate: Employee::Employee()
+   Employee(void)
+   ^~~~~~~~
+../inheritance.cpp:57:3: note:   candidate expects 0 arguments, 4 provided
+../inheritance.cpp:51:7: note: candidate: Employee::Employee(const Employee&)
+ class Employee : public Person
+       ^~~~~~~~
+../inheritance.cpp:51:7: note:   candidate expects 1 argument, 4 provided
+../inheritance.cpp:51:7: note: candidate: Employee::Employee(Employee&&)
+../inheritance.cpp:51:7: note:   candidate expects 1 argument, 4 provided
+subdir.mk:18: recipe for target 'inheritance.o' failed
+make: *** [inheritance.o] Error 1
+17:19:55 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:19:58 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:29 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:24:31 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:54 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:24:56 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:25:39 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+../inheritance.cpp:100:1: error: ‘s’ does not name a type
+ s
+ ^
+make: *** [inheritance.o] Error 1
+subdir.mk:18: recipe for target 'inheritance.o' failed
+17:25:55 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:25:58 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+17:28:20 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+../inheritance.cpp: In static member function ‘static void Person::ShowRecord()’:
+../inheritance.cpp:39:20: error: ‘this’ is unavailable for static member functions
+   cout<<"Name : "<<this->name<<endl;
+                    ^~~~
+../inheritance.cpp:40:19: error: ‘this’ is unavailable for static member functions
+   cout<<"Age : "<<this->age<<endl;
+                   ^~~~
+subdir.mk:18: recipe for target 'inheritance.o' failed
+make: *** [inheritance.o] Error 1
+17:29:02 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+../inheritance.cpp: In static member function ‘static void Person::ShowRecord()’:
+../inheritance.cpp:39:28: error: invalid use of member ‘Person::name’ in static member function
+   cout<<"Name : "<<Person::name<<endl;
+                            ^~~~
+../inheritance.cpp:15:10: note: declared here
+   string name;
+          ^~~~
+../inheritance.cpp:40:27: error: invalid use of member ‘Person::age’ in static member function
+   cout<<"Age : "<<Person::age<<endl;
+                           ^~~
+../inheritance.cpp:16:7: note: declared here
+   int age;
+       ^~~
+make: *** [inheritance.o] Error 1
+subdir.mk:18: recipe for target 'inheritance.o' failed
+17:29:29 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+./inheritance.o: In function `Person::Person(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)':
+/home/sunbeam/Mangesh/c++_first_revision/CDAC_CPP_PRACTICE/DAY_7/Day_7.2_Inheritance/Debug/../inheritance.cpp:31: undefined reference to `Person::name[abi:cxx11]'
+makefile:44: recipe for target 'Day_7.2_Inheritance' failed
+/home/sunbeam/Mangesh/c++_first_revision/CDAC_CPP_PRACTICE/DAY_7/Day_7.2_Inheritance/Debug/../inheritance.cpp:32: undefined reference to `Person::age'
+./inheritance.o: In function `Person::ShowRecord()':
+/home/sunbeam/Mangesh/c++_first_revision/CDAC_CPP_PRACTICE/DAY_7/Day_7.2_Inheritance/Debug/../inheritance.cpp:39: undefined reference to `Person::name[abi:cxx11]'
+/home/sunbeam/Mangesh/c++_first_revision/CDAC_CPP_PRACTICE/DAY_7/Day_7.2_Inheritance/Debug/../inheritance.cpp:40: undefined reference to `Person::age'
+collect2: error: ld returned 1 exit status
+make: *** [Day_7.2_Inheritance] Error 1
+17:30:25 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+../inheritance.cpp: In static member function ‘static void Person::ShowRecord()’:
+../inheritance.cpp:39:20: error: ‘this’ is unavailable for static member functions
+   cout<<"Name : "<<this->name<<endl;
+                    ^~~~
+../inheritance.cpp:40:19: error: ‘this’ is unavailable for static member functions
+   cout<<"Age : "<<this->age<<endl;
+                   ^~~~
+subdir.mk:18: recipe for target 'inheritance.o' failed
+make: *** [inheritance.o] Error 1
+17:31:26 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+../inheritance.cpp: In static member function ‘static void Person::ShowRecord()’:
+../inheritance.cpp:39:20: error: ‘this’ is unavailable for static member functions
+   cout<<"Name : "<<this->name<<endl;
+                    ^~~~
+../inheritance.cpp:40:19: error: ‘this’ is unavailable for static member functions
+   cout<<"Age : "<<this->age<<endl;
+                   ^~~~
+make: *** [inheritance.o] Error 1
+subdir.mk:18: recipe for target 'inheritance.o' failed
+17:31:47 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: Day_7.2_Inheritance
+Invoking: GCC C++ Linker
+g++  -o "Day_7.2_Inheritance"  ./inheritance.o   
+Finished building target: Day_7.2_Inheritance
+ 
+17:31:49 **** Incremental Build of configuration Debug for project Day_7.2_Inheritance ****
+make all 
+make: Nothing to be done for 'all'.
+18:42:10 **** Build of configuration Debug for project AssignNo3.4_answer_matrix_menudriven ****
+make all 
+Building file: ../AssignN01.4_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignN01.4_answer.d" -MT"AssignN01.4_answer.o" -o "AssignN01.4_answer.o" "../AssignN01.4_answer.cpp"
+Finished building: ../AssignN01.4_answer.cpp
+ 
+Building file: ../AssignNo1.1_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.1_answer.d" -MT"AssignNo1.1_answer.o" -o "AssignNo1.1_answer.o" "../AssignNo1.1_answer.cpp"
+Finished building: ../AssignNo1.1_answer.cpp
+ 
+Building file: ../AssignNo1.2_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.2_answer.d" -MT"AssignNo1.2_answer.o" -o "AssignNo1.2_answer.o" "../AssignNo1.2_answer.cpp"
+Finished building: ../AssignNo1.2_answer.cpp
+ 
+Building file: ../AssignNo1.3_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.3_answer.d" -MT"AssignNo1.3_answer.o" -o "AssignNo1.3_answer.o" "../AssignNo1.3_answer.cpp"
+../AssignNo1.3_answer.cpp: In function ‘int main()’:
+../AssignNo1.3_answer.cpp:82:6: warning: unused variable ‘new_date’ [-Wunused-variable]
+  int new_date;
+      ^~~~~~~~
+Finished building: ../AssignNo1.3_answer.cpp
+ 
+Building file: ../AssignNo1.4_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.4_answer.d" -MT"AssignNo1.4_answer.o" -o "AssignNo1.4_answer.o" "../AssignNo1.4_answer.cpp"
+Finished building: ../AssignNo1.4_answer.cpp
+ 
+Building file: ../AssignNo1.5_answer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AssignNo1.5_answer.d" -MT"AssignNo1.5_answer.o" -o "AssignNo1.5_answer.o" "../AssignNo1.5_answer.cpp"
+../AssignNo1.5_answer.cpp:57:26: error: no ‘int tpoint::TPoint::GetSum() const’ member function declared in class ‘tpoint::TPoint’
+  int TPoint::GetSum(void)const
+                          ^~~~~
+../AssignNo1.5_answer.cpp:67:9: error: prototype for ‘tpoint::TPoint tpoint::TPoint::Sum(tpoint::TPoint)’ does not match any in class ‘tpoint::TPoint’
+  TPoint TPoint::Sum(TPoint t)
+         ^~~~~~
+../AssignNo1.5_answer.cpp:32:11: error: candidate is: tpoint::TPoint tpoint::TPoint::Sum()
+    TPoint Sum();
+           ^~~
+make: *** [AssignNo1.5_answer.o] Error 1
+subdir.mk:39: recipe for target 'AssignNo1.5_answer.o' failed
+18:46:05 **** Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+18:46:14 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.
+19:04:56 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In constructor ‘Matrix::Matrix(int, int)’:
+../Matrix.cpp:38:21: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+    arr1=new int*(row);
+                     ^
+../Matrix.cpp:43:21: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+    arr2=new int*(row);
+                     ^
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:128:5: error: expected ‘;’ before ‘cin’
+     cin>>row;
+     ^~~
+../Matrix.cpp:130:5: error: expected ‘;’ before ‘cin’
+     cin>>col;
+     ^~~
+../Matrix.cpp:133:8: error: jump to case label [-fpermissive]
+   case Accept:
+        ^~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:140:8: error: jump to case label [-fpermissive]
+   case Display:
+        ^~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:151:8: error: jump to case label [-fpermissive]
+   case Addition:
+        ^~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:153:8: error: jump to case label [-fpermissive]
+   case substraction:
+        ^~~~~~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:155:8: error: jump to case label [-fpermissive]
+   case Multiplication:
+        ^~~~~~~~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:157:8: error: jump to case label [-fpermissive]
+   case 0:
+        ^
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+subdir.mk:18: recipe for target 'Matrix.o' failed
+make: *** [Matrix.o] Error 1
+19:05:22 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In constructor ‘Matrix::Matrix(int, int)’:
+../Matrix.cpp:38:21: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+    arr1=new int*(row);
+                     ^
+../Matrix.cpp:43:21: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+    arr2=new int*(row);
+                     ^
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:133:8: error: jump to case label [-fpermissive]
+   case Accept:
+        ^~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:140:8: error: jump to case label [-fpermissive]
+   case Display:
+        ^~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:151:8: error: jump to case label [-fpermissive]
+   case Addition:
+        ^~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:153:8: error: jump to case label [-fpermissive]
+   case substraction:
+        ^~~~~~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:155:8: error: jump to case label [-fpermissive]
+   case Multiplication:
+        ^~~~~~~~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:157:8: error: jump to case label [-fpermissive]
+   case 0:
+        ^
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+make: *** [Matrix.o] Error 1
+subdir.mk:18: recipe for target 'Matrix.o' failed
+19:06:32 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:133:8: error: jump to case label [-fpermissive]
+   case Accept:
+        ^~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:140:8: error: jump to case label [-fpermissive]
+   case Display:
+        ^~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:151:8: error: jump to case label [-fpermissive]
+   case Addition:
+        ^~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:153:8: error: jump to case label [-fpermissive]
+   case substraction:
+        ^~~~~~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:155:8: error: jump to case label [-fpermissive]
+   case Multiplication:
+        ^~~~~~~~~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:157:8: error: jump to case label [-fpermissive]
+   case 0:
+        ^
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+subdir.mk:18: recipe for target 'Matrix.o' failed
+make: *** [Matrix.o] Error 1
+19:12:07 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:151:5: error: unterminated comment
+     /*
+     ^
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:133:8: error: jump to case label [-fpermissive]
+   case Accept:
+        ^~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:140:8: error: jump to case label [-fpermissive]
+   case Display:
+        ^~~~~~~
+../Matrix.cpp:131:12: note:   crosses initialization of ‘Matrix m’
+     Matrix m(row,col);
+            ^
+../Matrix.cpp:150:10: error: expected ‘}’ at end of input
+     break;
+          ^
+../Matrix.cpp:150:10: error: expected ‘}’ at end of input
+../Matrix.cpp:150:10: error: expected ‘while’ at end of input
+../Matrix.cpp:150:10: error: expected ‘(’ at end of input
+../Matrix.cpp:150:10: error: expected primary-expression at end of input
+../Matrix.cpp:150:10: error: expected ‘)’ at end of input
+../Matrix.cpp:150:10: error: expected ‘;’ at end of input
+../Matrix.cpp:150:10: error: expected ‘}’ at end of input
+subdir.mk:18: recipe for target 'Matrix.o' failed
+make: *** [Matrix.o] Error 1
+19:15:29 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:149:5: error: unterminated comment
+     /*
+     ^
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:148:10: error: expected ‘}’ at end of input
+     break;
+          ^
+../Matrix.cpp:148:10: error: expected ‘}’ at end of input
+../Matrix.cpp:148:10: error: expected ‘while’ at end of input
+../Matrix.cpp:148:10: error: expected ‘(’ at end of input
+../Matrix.cpp:148:10: error: expected primary-expression at end of input
+../Matrix.cpp:148:10: error: expected ‘)’ at end of input
+../Matrix.cpp:148:10: error: expected ‘;’ at end of input
+../Matrix.cpp:148:10: error: expected ‘}’ at end of input
+subdir.mk:18: recipe for target 'Matrix.o' failed
+make: *** [Matrix.o] Error 1
+19:16:28 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+19:16:33 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.
+19:18:51 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+19:18:53 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.
+19:19:49 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:112:6: warning: unused variable ‘row’ [-Wunused-variable]
+  int row,col;
+      ^~~
+../Matrix.cpp:112:10: warning: unused variable ‘col’ [-Wunused-variable]
+  int row,col;
+          ^~~
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+19:19:56 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.
+19:20:32 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:115:6: warning: unused variable ‘row’ [-Wunused-variable]
+  int row,col;
+      ^~~
+../Matrix.cpp:115:10: warning: unused variable ‘col’ [-Wunused-variable]
+  int row,col;
+          ^~~
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+19:20:35 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.
+19:22:34 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:116:6: warning: unused variable ‘row’ [-Wunused-variable]
+  int row,col;
+      ^~~
+../Matrix.cpp:116:10: warning: unused variable ‘col’ [-Wunused-variable]
+  int row,col;
+          ^~~
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+19:22:37 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.
+19:23:11 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp: In function ‘int main()’:
+../Matrix.cpp:116:6: warning: unused variable ‘row’ [-Wunused-variable]
+  int row,col;
+      ^~~
+../Matrix.cpp:116:10: warning: unused variable ‘col’ [-Wunused-variable]
+  int row,col;
+          ^~~
+Finished building: ../Matrix.cpp
+ 
+Building target: Matrix_Operations
+Invoking: GCC C++ Linker
+g++  -o "Matrix_Operations"  ./Matrix.o   
+Finished building target: Matrix_Operations
+ 
+19:23:14 **** Incremental Build of configuration Debug for project Matrix_Operations ****
+make all 
+make: Nothing to be done for 'all'.

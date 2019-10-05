@@ -1,0 +1,15 @@
+15:06:52 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+Building file: ../allocating_mem_to_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocating_mem_to_array.d" -MT"allocating_mem_to_array.o" -o "allocating_mem_to_array.o" "../allocating_mem_to_array.cpp"
+Finished building: ../allocating_mem_to_array.cpp
+ 
+Building target: Day_4.9
+Invoking: GCC C++ Linker
+g++  -o "Day_4.9"  ./allocating_mem_to_array.o   
+Finished building target: Day_4.9
+ 
+
+15:06:52 Build Finished. 0 errors, 0 warnings. (took 667ms)
+

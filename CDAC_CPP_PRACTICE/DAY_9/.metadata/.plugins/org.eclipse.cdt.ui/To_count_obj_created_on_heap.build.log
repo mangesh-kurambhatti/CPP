@@ -1,0 +1,6 @@
+22:08:33 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+
+22:08:33 Build Finished. 0 errors, 0 warnings. (took 362ms)
+

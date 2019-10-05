@@ -1,0 +1,19 @@
+15:59:02 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+Building file: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"malloc_dont_call_ctor_and_new_call_ctr.d" -MT"malloc_dont_call_ctor_and_new_call_ctr.o" -o "malloc_dont_call_ctor_and_new_call_ctr.o" "../malloc_dont_call_ctor_and_new_call_ctr.cpp"
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main1()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:45:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr =(Complex *)malloc (sizeof(Complex));
+           ^~~
+Finished building: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+ 
+Building target: Day_4.11
+Invoking: GCC C++ Linker
+g++  -o "Day_4.11"  ./malloc_dont_call_ctor_and_new_call_ctr.o   
+Finished building target: Day_4.11
+ 
+
+15:59:02 Build Finished. 0 errors, 1 warnings. (took 681ms)
+

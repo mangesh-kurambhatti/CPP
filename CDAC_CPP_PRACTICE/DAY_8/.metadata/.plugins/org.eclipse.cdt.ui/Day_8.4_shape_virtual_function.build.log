@@ -1,0 +1,19 @@
+18:55:46 **** Incremental Build of configuration Debug for project Day_8.4_shape_virtual_function ****
+make all 
+Building file: ../shape_virtual_class.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"shape_virtual_class.d" -MT"shape_virtual_class.o" -o "shape_virtual_class.o" "../shape_virtual_class.cpp"
+../shape_virtual_class.cpp: In function ‘int main()’:
+../shape_virtual_class.cpp:139:11: warning: deleting object of polymorphic class type ‘Shape’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+    delete ptr;
+           ^~~
+Finished building: ../shape_virtual_class.cpp
+ 
+Building target: Day_8.4_shape_virtual_function
+Invoking: GCC C++ Linker
+g++  -o "Day_8.4_shape_virtual_function"  ./shape_virtual_class.o   
+Finished building target: Day_8.4_shape_virtual_function
+ 
+
+18:55:47 Build Finished. 0 errors, 1 warnings. (took 669ms)
+

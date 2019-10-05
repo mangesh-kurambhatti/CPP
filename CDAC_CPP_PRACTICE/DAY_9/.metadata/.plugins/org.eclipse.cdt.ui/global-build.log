@@ -1,0 +1,2174 @@
+15:05:10 **** Clean-only build of configuration Debug for project Day_9_cin_overloading ****
+make clean 
+rm -rf  ./cin_overloading.o  ./cin_overloading.d  Day_9_cin_overloading
+ 
+15:05:23 **** Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+Building file: ../cin_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cin_overloading.d" -MT"cin_overloading.o" -o "cin_overloading.o" "../cin_overloading.cpp"
+Finished building: ../cin_overloading.cpp
+ 
+Building target: Day_9_cin_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_cin_overloading"  ./cin_overloading.o   
+Finished building target: Day_9_cin_overloading
+ 
+15:05:33 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:53 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+Building file: ../cin_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cin_overloading.d" -MT"cin_overloading.o" -o "cin_overloading.o" "../cin_overloading.cpp"
+Finished building: ../cin_overloading.cpp
+ 
+Building target: Day_9_cin_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_cin_overloading"  ./cin_overloading.o   
+Finished building target: Day_9_cin_overloading
+ 
+15:05:57 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:06:06 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:14 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+Building file: ../cin_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cin_overloading.d" -MT"cin_overloading.o" -o "cin_overloading.o" "../cin_overloading.cpp"
+Finished building: ../cin_overloading.cpp
+ 
+Building target: Day_9_cin_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_cin_overloading"  ./cin_overloading.o   
+Finished building target: Day_9_cin_overloading
+ 
+15:11:17 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:12:32 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+Building file: ../cin_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cin_overloading.d" -MT"cin_overloading.o" -o "cin_overloading.o" "../cin_overloading.cpp"
+Finished building: ../cin_overloading.cpp
+ 
+Building target: Day_9_cin_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_cin_overloading"  ./cin_overloading.o   
+Finished building target: Day_9_cin_overloading
+ 
+15:12:34 **** Incremental Build of configuration Debug for project Day_9_cin_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:14:12 **** Build of configuration Debug for project Day_9_eqal_to_operator_overloading ****
+make all 
+Building file: ../equal_to_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"equal_to_operator_overloading.d" -MT"equal_to_operator_overloading.o" -o "equal_to_operator_overloading.o" "../equal_to_operator_overloading.cpp"
+Finished building: ../equal_to_operator_overloading.cpp
+ 
+Building target: Day_9_eqal_to_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_eqal_to_operator_overloading"  ./equal_to_operator_overloading.o   
+Finished building target: Day_9_eqal_to_operator_overloading
+ 
+15:25:53 **** Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘std::istream& operator>>(std::istream&, Complex&)’:
+../Binary_operator_overloading.cpp:41:2: error: expected ‘;’ before ‘cin’
+  cin>>c1.real;
+  ^~~
+../Binary_operator_overloading.cpp: In function ‘int main()’:
+../Binary_operator_overloading.cpp:67:2: error: expected ‘;’ before ‘cout’
+  cout<<c1<<endl<<c2;
+  ^~~~
+../Binary_operator_overloading.cpp:71:2: error: expected ‘,’ or ‘;’ before ‘return’
+  return 0;
+  ^~~~~~
+subdir.mk:18: recipe for target 'Binary_operator_overloading.o' failed
+make: *** [Binary_operator_overloading.o] Error 1
+15:26:05 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘int main()’:
+../Binary_operator_overloading.cpp:67:2: error: expected ‘;’ before ‘cout’
+  cout<<c1<<endl<<c2;
+  ^~~~
+../Binary_operator_overloading.cpp:71:2: error: expected ‘,’ or ‘;’ before ‘return’
+  return 0;
+  ^~~~~~
+make: *** [Binary_operator_overloading.o] Error 1
+subdir.mk:18: recipe for target 'Binary_operator_overloading.o' failed
+15:26:22 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘int main()’:
+../Binary_operator_overloading.cpp:69:10: warning: variable ‘c3’ set but not used [-Wunused-but-set-variable]
+  Complex c3=c1+c2; //c3=c1.operator+(c2)
+          ^~
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:26:40 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:27:17 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:27:23 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:52 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:29:10 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:29:18 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:30:46 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘int main()’:
+../Binary_operator_overloading.cpp:81:10: warning: variable ‘c4’ set but not used [-Wunused-but-set-variable]
+  Complex c4=c2-c1;// c4=c2.operator-(c1)
+          ^~
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:30:58 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:31:21 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:31:23 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:04 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:37:06 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:40:47 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘Complex operator+(Complex&, int)’:
+../Binary_operator_overloading.cpp:57:7: error: ‘int Complex::real’ is private within this context
+  temp.real=c1.real+ value;
+       ^~~~
+../Binary_operator_overloading.cpp:15:6: note: declared private here
+  int real;
+      ^~~~
+../Binary_operator_overloading.cpp:57:15: error: ‘int Complex::real’ is private within this context
+  temp.real=c1.real+ value;
+               ^~~~
+../Binary_operator_overloading.cpp:15:6: note: declared private here
+  int real;
+      ^~~~
+../Binary_operator_overloading.cpp:58:7: error: ‘int Complex::imag’ is private within this context
+  temp.imag=c1.imag+imag;
+       ^~~~
+../Binary_operator_overloading.cpp:16:6: note: declared private here
+  int imag;
+      ^~~~
+../Binary_operator_overloading.cpp:58:15: error: ‘int Complex::imag’ is private within this context
+  temp.imag=c1.imag+imag;
+               ^~~~
+../Binary_operator_overloading.cpp:16:6: note: declared private here
+  int imag;
+      ^~~~
+../Binary_operator_overloading.cpp:58:20: error: ‘imag’ was not declared in this scope
+  temp.imag=c1.imag+imag;
+                    ^~~~
+make: *** [Binary_operator_overloading.o] Error 1
+subdir.mk:18: recipe for target 'Binary_operator_overloading.o' failed
+15:41:09 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘Complex operator+(Complex&, int)’:
+../Binary_operator_overloading.cpp:59:20: error: ‘imag’ was not declared in this scope
+  temp.imag=c1.imag+imag;
+                    ^~~~
+subdir.mk:18: recipe for target 'Binary_operator_overloading.o' failed
+make: *** [Binary_operator_overloading.o] Error 1
+15:41:19 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:41:21 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:20 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+../Binary_operator_overloading.cpp: In function ‘Complex operator+(int, Complex&)’:
+../Binary_operator_overloading.cpp:65:7: error: ‘int Complex::real’ is private within this context
+  temp.real=c1.real+ value;
+       ^~~~
+../Binary_operator_overloading.cpp:15:6: note: declared private here
+  int real;
+      ^~~~
+../Binary_operator_overloading.cpp:65:15: error: ‘int Complex::real’ is private within this context
+  temp.real=c1.real+ value;
+               ^~~~
+../Binary_operator_overloading.cpp:15:6: note: declared private here
+  int real;
+      ^~~~
+../Binary_operator_overloading.cpp:66:7: error: ‘int Complex::imag’ is private within this context
+  temp.imag=c1.imag+ value;
+       ^~~~
+../Binary_operator_overloading.cpp:16:6: note: declared private here
+  int imag;
+      ^~~~
+../Binary_operator_overloading.cpp:66:15: error: ‘int Complex::imag’ is private within this context
+  temp.imag=c1.imag+ value;
+               ^~~~
+../Binary_operator_overloading.cpp:16:6: note: declared private here
+  int imag;
+      ^~~~
+subdir.mk:18: recipe for target 'Binary_operator_overloading.o' failed
+make: *** [Binary_operator_overloading.o] Error 1
+15:49:47 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+15:49:49 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:12 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:13 **** Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp:27:32: error: postfix ‘Complex Complex::operator++(Complex&)’ must take ‘int’ as its argument
+  Complex operator++(Complex &c1)
+                                ^
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:65:13: error: no match for ‘operator++’ (operand type is ‘Complex’)
+  Complex c2=++c1;// c2=opertor++(c1)
+             ^~~~
+../unary_operator.cpp:65:10: warning: unused variable ‘c2’ [-Wunused-variable]
+  Complex c2=++c1;// c2=opertor++(c1)
+          ^~
+subdir.mk:18: recipe for target 'unary_operator.o' failed
+make: *** [unary_operator.o] Error 1
+16:25:20 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:20 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp:27:32: error: postfix ‘Complex Complex::operator++(Complex&)’ must take ‘int’ as its argument
+  Complex operator++(Complex &c1)
+                                ^
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:65:14: error: no match for ‘operator++’ (operand type is ‘Complex’)
+  Complex c2= ++ c1;// c2=opertor++(c1)
+              ^~~~~
+subdir.mk:18: recipe for target 'unary_operator.o' failed
+make: *** [unary_operator.o] Error 1
+17:11:24 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:25 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp:27:36: error: ‘Complex Complex::operator++(Complex&, int)’ must take either zero or one argument
+  Complex operator++(Complex &c1,int)
+                                    ^
+../unary_operator.cpp:36:32: error: postfix ‘Complex Complex::operator++(Complex&)’ must take ‘int’ as its argument
+  Complex operator++(Complex &c1)
+                                ^
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:75:14: error: no match for ‘operator++’ (operand type is ‘Complex’)
+  Complex c2= ++c1;// c2=opertor++(c1)
+              ^~~~
+../unary_operator.cpp:77:16: error: no ‘operator++(int)’ declared for postfix ‘++’ [-fpermissive]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+              ~~^~
+../unary_operator.cpp:77:10: warning: unused variable ‘c3’ [-Wunused-variable]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+          ^~
+subdir.mk:18: recipe for target 'unary_operator.o' failed
+make: *** [unary_operator.o] Error 1
+17:11:33 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:34 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp:27:36: error: ‘Complex Complex::operator++(Complex&, int)’ must take either zero or one argument
+  Complex operator++(Complex &c1,int)
+                                    ^
+../unary_operator.cpp:36:32: error: postfix ‘Complex Complex::operator++(Complex&)’ must take ‘int’ as its argument
+  Complex operator++(Complex &c1)
+                                ^
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:75:14: error: no match for ‘operator++’ (operand type is ‘Complex’)
+  Complex c2= ++c1;// c2=opertor++(c1)
+              ^~~~
+../unary_operator.cpp:77:16: error: no ‘operator++(int)’ declared for postfix ‘++’ [-fpermissive]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+              ~~^~
+../unary_operator.cpp:77:10: warning: unused variable ‘c3’ [-Wunused-variable]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+          ^~
+make: *** [unary_operator.o] Error 1
+subdir.mk:18: recipe for target 'unary_operator.o' failed
+17:11:36 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:37 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp:27:32: error: postfix ‘Complex Complex::operator++(Complex&)’ must take ‘int’ as its argument
+  Complex operator++(Complex &c1)
+                                ^
+../unary_operator.cpp:36:36: error: ‘Complex Complex::operator++(Complex&, int)’ must take either zero or one argument
+  Complex operator++(Complex &c1,int)
+                                    ^
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:75:14: error: no match for ‘operator++’ (operand type is ‘Complex’)
+  Complex c2= ++c1;// c2=opertor++(c1)
+              ^~~~
+../unary_operator.cpp:77:16: error: no ‘operator++(int)’ declared for postfix ‘++’ [-fpermissive]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+              ~~^~
+../unary_operator.cpp:77:10: warning: unused variable ‘c3’ [-Wunused-variable]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+          ^~
+subdir.mk:18: recipe for target 'unary_operator.o' failed
+make: *** [unary_operator.o] Error 1
+17:13:02 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:02 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp:27:36: error: ‘Complex Complex::operator++(Complex&, int)’ must take either zero or one argument
+  Complex operator++(Complex &c1,int) //prefix
+                                    ^
+../unary_operator.cpp:36:32: error: postfix ‘Complex Complex::operator++(Complex&)’ must take ‘int’ as its argument
+  Complex operator++(Complex &c1) //postfix
+                                ^
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:75:14: error: no match for ‘operator++’ (operand type is ‘Complex’)
+  Complex c2= ++c1;// c2=opertor++(c1)
+              ^~~~
+../unary_operator.cpp:77:16: error: no ‘operator++(int)’ declared for postfix ‘++’ [-fpermissive]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+              ~~^~
+../unary_operator.cpp:77:10: warning: unused variable ‘c3’ [-Wunused-variable]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+          ^~
+subdir.mk:18: recipe for target 'unary_operator.o' failed
+make: *** [unary_operator.o] Error 1
+17:15:06 **** Clean-only build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make clean 
+rm -rf  ./Binary_operator_overloading.o  ./Binary_operator_overloading.d  Day_9_Binary_operator_overloading
+ 
+17:15:07 **** Clean-only build of configuration Debug for project Day_9_unary_operator ****
+make clean 
+rm -rf  ./unary_operator.o  ./unary_operator.d  Day_9_unary_operator
+ 
+17:15:11 **** Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+Building file: ../Binary_operator_overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Binary_operator_overloading.d" -MT"Binary_operator_overloading.o" -o "Binary_operator_overloading.o" "../Binary_operator_overloading.cpp"
+Finished building: ../Binary_operator_overloading.cpp
+ 
+Building target: Day_9_Binary_operator_overloading
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Binary_operator_overloading"  ./Binary_operator_overloading.o   
+Finished building target: Day_9_Binary_operator_overloading
+ 
+17:15:11 **** Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+../unary_operator.cpp: In function ‘int main()’:
+../unary_operator.cpp:77:10: warning: variable ‘c3’ set but not used [-Wunused-but-set-variable]
+  Complex c3= c1++;// //c3=operator++(c1,0);
+          ^~
+Finished building: ../unary_operator.cpp
+ 
+Building target: Day_9_unary_operator
+Invoking: GCC C++ Linker
+g++  -o "Day_9_unary_operator"  ./unary_operator.o   
+Finished building target: Day_9_unary_operator
+ 
+17:15:57 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:58 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+Building file: ../unary_operator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"unary_operator.d" -MT"unary_operator.o" -o "unary_operator.o" "../unary_operator.cpp"
+Finished building: ../unary_operator.cpp
+ 
+Building target: Day_9_unary_operator
+Invoking: GCC C++ Linker
+g++  -o "Day_9_unary_operator"  ./unary_operator.o   
+Finished building target: Day_9_unary_operator
+ 
+17:16:14 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:17 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:17 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:19 **** Incremental Build of configuration Debug for project Day_9_Binary_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:40 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:52 **** Incremental Build of configuration Debug for project Day_9_unary_operator ****
+make all 
+make: Nothing to be done for 'all'.
+17:23:31 **** Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+Building file: ../swap_using_template.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"swap_using_template.d" -MT"swap_using_template.o" -o "swap_using_template.o" "../swap_using_template.cpp"
+Finished building: ../swap_using_template.cpp
+ 
+Building target: Day_9_swap_using_template
+Invoking: GCC C++ Linker
+g++  -o "Day_9_swap_using_template"  ./swap_using_template.o   
+Finished building target: Day_9_swap_using_template
+ 
+17:23:47 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:26 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+Building file: ../swap_using_template.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"swap_using_template.d" -MT"swap_using_template.o" -o "swap_using_template.o" "../swap_using_template.cpp"
+Finished building: ../swap_using_template.cpp
+ 
+Building target: Day_9_swap_using_template
+Invoking: GCC C++ Linker
+g++  -o "Day_9_swap_using_template"  ./swap_using_template.o   
+Finished building target: Day_9_swap_using_template
+ 
+17:24:29 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+make: Nothing to be done for 'all'.
+17:25:01 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+Building file: ../swap_using_template.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"swap_using_template.d" -MT"swap_using_template.o" -o "swap_using_template.o" "../swap_using_template.cpp"
+../swap_using_template.cpp:10:21: error: conflicting declaration ‘class T’
+ template<typename T,typename T>
+                     ^~~~~~~~
+../swap_using_template.cpp:10:10: note: previous declaration as ‘class T’
+ template<typename T,typename T>
+          ^~~~~~~~
+../swap_using_template.cpp: In function ‘int main()’:
+../swap_using_template.cpp:22:32: error: no matching function for call to ‘my_swap<float, double>(float&, double&)’
+   my_swap<float,double>(no1,no2);
+                                ^
+../swap_using_template.cpp:11:6: note: candidate: template<class T, class T> void my_swap(T&, T&)
+ void my_swap(T &no1,T &no2)
+      ^~~~~~~
+../swap_using_template.cpp:11:6: note:   template argument deduction/substitution failed:
+../swap_using_template.cpp:22:32: note:   cannot convert ‘no2’ (type ‘double’) to type ‘float&’
+   my_swap<float,double>(no1,no2);
+                                ^
+make: *** [swap_using_template.o] Error 1
+subdir.mk:18: recipe for target 'swap_using_template.o' failed
+17:25:31 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+Building file: ../swap_using_template.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"swap_using_template.d" -MT"swap_using_template.o" -o "swap_using_template.o" "../swap_using_template.cpp"
+../swap_using_template.cpp: In function ‘int main()’:
+../swap_using_template.cpp:22:32: error: no matching function for call to ‘my_swap<float, double>(float&, double&)’
+   my_swap<float,double>(no1,no2);
+                                ^
+../swap_using_template.cpp:11:6: note: candidate: template<class T, class X> void my_swap(T&, T&)
+ void my_swap(T &no1,T &no2)
+      ^~~~~~~
+../swap_using_template.cpp:11:6: note:   template argument deduction/substitution failed:
+../swap_using_template.cpp:22:32: note:   cannot convert ‘no2’ (type ‘double’) to type ‘float&’
+   my_swap<float,double>(no1,no2);
+                                ^
+make: *** [swap_using_template.o] Error 1
+subdir.mk:18: recipe for target 'swap_using_template.o' failed
+17:25:48 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+Building file: ../swap_using_template.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"swap_using_template.d" -MT"swap_using_template.o" -o "swap_using_template.o" "../swap_using_template.cpp"
+Finished building: ../swap_using_template.cpp
+ 
+Building target: Day_9_swap_using_template
+Invoking: GCC C++ Linker
+g++  -o "Day_9_swap_using_template"  ./swap_using_template.o   
+Finished building target: Day_9_swap_using_template
+ 
+17:25:51 **** Incremental Build of configuration Debug for project Day_9_swap_using_template ****
+make all 
+make: Nothing to be done for 'all'.
+17:40:06 **** Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+Building file: ../vtable_vptr_table.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vtable_vptr_table.d" -MT"vtable_vptr_table.o" -o "vtable_vptr_table.o" "../vtable_vptr_table.cpp"
+../vtable_vptr_table.cpp: In function ‘int main()’:
+../vtable_vptr_table.cpp:82:2: error: expected ‘,’ or ‘;’ before ‘return’
+  return 0;
+  ^~~~~~
+../vtable_vptr_table.cpp:81:8: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Base *ptr=new Derived()
+        ^~~
+subdir.mk:18: recipe for target 'vtable_vptr_table.o' failed
+make: *** [vtable_vptr_table.o] Error 1
+17:40:11 **** Incremental Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+Building file: ../vtable_vptr_table.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vtable_vptr_table.d" -MT"vtable_vptr_table.o" -o "vtable_vptr_table.o" "../vtable_vptr_table.cpp"
+../vtable_vptr_table.cpp: In function ‘int main()’:
+../vtable_vptr_table.cpp:81:8: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Base *ptr=new Derived();
+        ^~~
+Finished building: ../vtable_vptr_table.cpp
+ 
+Building target: Day_9_virtual_table_demo
+Invoking: GCC C++ Linker
+g++  -o "Day_9_virtual_table_demo"  ./vtable_vptr_table.o   
+Finished building target: Day_9_virtual_table_demo
+ 
+17:40:28 **** Incremental Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+make: Nothing to be done for 'all'.
+17:46:11 **** Incremental Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+Building file: ../vtable_vptr_table.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vtable_vptr_table.d" -MT"vtable_vptr_table.o" -o "vtable_vptr_table.o" "../vtable_vptr_table.cpp"
+Finished building: ../vtable_vptr_table.cpp
+ 
+Building target: Day_9_virtual_table_demo
+Invoking: GCC C++ Linker
+g++  -o "Day_9_virtual_table_demo"  ./vtable_vptr_table.o   
+Finished building target: Day_9_virtual_table_demo
+ 
+17:46:13 **** Incremental Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+make: Nothing to be done for 'all'.
+18:06:38 **** Incremental Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+Building file: ../vtable_vptr_table.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"vtable_vptr_table.d" -MT"vtable_vptr_table.o" -o "vtable_vptr_table.o" "../vtable_vptr_table.cpp"
+Finished building: ../vtable_vptr_table.cpp
+ 
+Building target: Day_9_virtual_table_demo
+Invoking: GCC C++ Linker
+g++  -o "Day_9_virtual_table_demo"  ./vtable_vptr_table.o   
+Finished building target: Day_9_virtual_table_demo
+ 
+18:06:40 **** Incremental Build of configuration Debug for project Day_9_virtual_table_demo ****
+make all 
+make: Nothing to be done for 'all'.
+18:25:58 **** Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+Building file: ../fun_ptr_in_c_late_binding.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun_ptr_in_c_late_binding.d" -MT"fun_ptr_in_c_late_binding.o" -o "fun_ptr_in_c_late_binding.o" "../fun_ptr_in_c_late_binding.cpp"
+../fun_ptr_in_c_late_binding.cpp: In function ‘int menu_choice()’:
+../fun_ptr_in_c_late_binding.cpp:32:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../fun_ptr_in_c_late_binding.cpp
+ 
+Building target: Day_9_Function_Pointer_in_c_late_ binding
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Function_Pointer_in_c_late_ binding"  ./fun_ptr_in_c_late_binding.o   
+Finished building target: Day_9_Function_Pointer_in_c_late_ binding
+ 
+18:25:59 **** Incremental Build of configuration Debug for project Day_9_eqal_to_operator_overloading ****
+make all 
+make: Nothing to be done for 'all'.
+18:26:25 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+make: Nothing to be done for 'all'.
+18:27:10 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+make: Nothing to be done for 'all'.
+18:27:12 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+make: Nothing to be done for 'all'.
+18:27:50 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+Building file: ../fun_ptr_in_c_late_binding.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun_ptr_in_c_late_binding.d" -MT"fun_ptr_in_c_late_binding.o" -o "fun_ptr_in_c_late_binding.o" "../fun_ptr_in_c_late_binding.cpp"
+../fun_ptr_in_c_late_binding.cpp: In function ‘int menu_choice()’:
+../fun_ptr_in_c_late_binding.cpp:32:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../fun_ptr_in_c_late_binding.cpp
+ 
+Building target: Day_9_Function_Pointer_in_c_late_ binding
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Function_Pointer_in_c_late_ binding"  ./fun_ptr_in_c_late_binding.o   
+Finished building target: Day_9_Function_Pointer_in_c_late_ binding
+ 
+18:27:55 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+make: Nothing to be done for 'all'.
+18:29:26 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+Building file: ../fun_ptr_in_c_late_binding.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun_ptr_in_c_late_binding.d" -MT"fun_ptr_in_c_late_binding.o" -o "fun_ptr_in_c_late_binding.o" "../fun_ptr_in_c_late_binding.cpp"
+../fun_ptr_in_c_late_binding.cpp: In function ‘int menu_choice()’:
+../fun_ptr_in_c_late_binding.cpp:34:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../fun_ptr_in_c_late_binding.cpp
+ 
+Building target: Day_9_Function_Pointer_in_c_late_ binding
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Function_Pointer_in_c_late_ binding"  ./fun_ptr_in_c_late_binding.o   
+Finished building target: Day_9_Function_Pointer_in_c_late_ binding
+ 
+18:29:28 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+make: Nothing to be done for 'all'.
+18:31:14 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+Building file: ../fun_ptr_in_c_late_binding.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun_ptr_in_c_late_binding.d" -MT"fun_ptr_in_c_late_binding.o" -o "fun_ptr_in_c_late_binding.o" "../fun_ptr_in_c_late_binding.cpp"
+Finished building: ../fun_ptr_in_c_late_binding.cpp
+ 
+Building target: Day_9_Function_Pointer_in_c_late_ binding
+Invoking: GCC C++ Linker
+g++  -o "Day_9_Function_Pointer_in_c_late_ binding"  ./fun_ptr_in_c_late_binding.o   
+Finished building target: Day_9_Function_Pointer_in_c_late_ binding
+ 
+18:31:16 **** Incremental Build of configuration Debug for project Day_9_Function_Pointer_in_c_late_ binding ****
+make all 
+make: Nothing to be done for 'all'.
+18:37:45 **** Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:35:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+18:38:00 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+18:39:00 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:46:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+18:39:07 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+18:39:44 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp:33:29: error: ‘operator new’ must return type ‘void*’
+  Demo& operator new(Demo &d1)
+                             ^
+../count_of_obj_on_heap.cpp:33:29: error: ‘operator new’ takes type ‘size_t’ (‘long unsigned int’) as first parameter [-fpermissive]
+../count_of_obj_on_heap.cpp: In static member function ‘static void* Demo::operator new(long unsigned int)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:46:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+subdir.mk:18: recipe for target 'count_of_obj_on_heap.o' failed
+make: *** [count_of_obj_on_heap.o] Error 1
+18:39:52 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:46:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+18:39:55 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+18:40:15 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatorNew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:46:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+18:40:18 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+18:40:52 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In constructor ‘Demo::Demo()’:
+../count_of_obj_on_heap.cpp:19:13: error: ‘int Demo::count’ is a static data member; it can only be initialized at its definition
+  Demo(void):count(0)
+             ^~~~~
+../count_of_obj_on_heap.cpp: In constructor ‘Demo::Demo(int)’:
+../count_of_obj_on_heap.cpp:23:18: error: ‘int Demo::count’ is a static data member; it can only be initialized at its definition
+  Demo(int count):count(count)
+                  ^~~~~
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+subdir.mk:18: recipe for target 'count_of_obj_on_heap.o' failed
+make: *** [count_of_obj_on_heap.o] Error 1
+18:41:42 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+18:41:47 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+18:42:31 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:45:10: error: invalid conversion from ‘Demo*’ to ‘int’ [-fpermissive]
+  Demo D1=new Demo();
+          ^~~~~~~~~~
+../count_of_obj_on_heap.cpp:23:2: note:   initializing argument 1 of ‘Demo::Demo(int)’
+  Demo(int count)
+  ^~~~
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+make: *** [count_of_obj_on_heap.o] Error 1
+subdir.mk:18: recipe for target 'count_of_obj_on_heap.o' failed
+18:43:03 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In member function ‘Demo& Demo::operatornew(Demo&)’:
+../count_of_obj_on_heap.cpp:37:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:45:8: warning: unused variable ‘D1’ [-Wunused-variable]
+  Demo *D1=new Demo();
+        ^~
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:51:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+22:05:55 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In static member function ‘static void* Demo::operator new(size_t)’:
+../count_of_obj_on_heap.cpp:31:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:51:13: error: ‘class Demo’ has no member named ‘GetCount’; did you mean ‘count’?
+  int num=p->GetCount();
+             ^~~~~~~~
+             count
+../count_of_obj_on_heap.cpp:44:8: warning: unused variable ‘D1’ [-Wunused-variable]
+  Demo *D1=new Demo();
+        ^~
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+subdir.mk:18: recipe for target 'count_of_obj_on_heap.o' failed
+make: *** [count_of_obj_on_heap.o] Error 1
+22:06:12 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In static member function ‘static void* Demo::operator new(size_t)’:
+../count_of_obj_on_heap.cpp:31:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:53:22: error: ‘num’ was not declared in this scope
+  cout<<"Count is::"<<num;
+                      ^~~
+../count_of_obj_on_heap.cpp:53:22: note: suggested alternative: ‘enum’
+  cout<<"Count is::"<<num;
+                      ^~~
+                      enum
+../count_of_obj_on_heap.cpp:44:8: warning: unused variable ‘D1’ [-Wunused-variable]
+  Demo *D1=new Demo();
+        ^~
+../count_of_obj_on_heap.cpp:46:8: warning: unused variable ‘p’ [-Wunused-variable]
+  Demo *p=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+make: *** [count_of_obj_on_heap.o] Error 1
+subdir.mk:18: recipe for target 'count_of_obj_on_heap.o' failed
+22:06:36 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In static member function ‘static void* Demo::operator new(size_t)’:
+../count_of_obj_on_heap.cpp:31:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:53:28: error: ‘int Demo::count’ is private within this context
+  cout<<"Count is::"<<Demo::count;
+                            ^~~~~
+../count_of_obj_on_heap.cpp:39:5: note: declared private here
+ int Demo::count=0;
+     ^~~~
+../count_of_obj_on_heap.cpp:44:8: warning: unused variable ‘D1’ [-Wunused-variable]
+  Demo *D1=new Demo();
+        ^~
+../count_of_obj_on_heap.cpp:46:8: warning: unused variable ‘p’ [-Wunused-variable]
+  Demo *p=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:48:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+subdir.mk:18: recipe for target 'count_of_obj_on_heap.o' failed
+make: *** [count_of_obj_on_heap.o] Error 1
+22:06:57 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In static member function ‘static void* Demo::operator new(size_t)’:
+../count_of_obj_on_heap.cpp:32:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:45:8: warning: unused variable ‘D1’ [-Wunused-variable]
+  Demo *D1=new Demo();
+        ^~
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘p’ [-Wunused-variable]
+  Demo *p=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:51:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+22:06:59 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+22:07:52 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+Building file: ../count_of_obj_on_heap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"count_of_obj_on_heap.d" -MT"count_of_obj_on_heap.o" -o "count_of_obj_on_heap.o" "../count_of_obj_on_heap.cpp"
+../count_of_obj_on_heap.cpp: In static member function ‘static void* Demo::operator new(size_t)’:
+../count_of_obj_on_heap.cpp:32:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../count_of_obj_on_heap.cpp: In function ‘int main()’:
+../count_of_obj_on_heap.cpp:47:8: warning: unused variable ‘p’ [-Wunused-variable]
+  Demo *p=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:49:8: warning: unused variable ‘q’ [-Wunused-variable]
+  Demo *q=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:50:8: warning: unused variable ‘e’ [-Wunused-variable]
+  Demo *e=new Demo();  //operator new(Demo &d1)
+        ^
+../count_of_obj_on_heap.cpp:51:8: warning: unused variable ‘r’ [-Wunused-variable]
+  Demo *r=new Demo();  //operator new(Demo &d1)
+        ^
+Finished building: ../count_of_obj_on_heap.cpp
+ 
+Building target: To_count_obj_created_on_heap
+Invoking: GCC C++ Linker
+g++  -o "To_count_obj_created_on_heap"  ./count_of_obj_on_heap.o   
+Finished building target: To_count_obj_created_on_heap
+ 
+22:07:55 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+22:08:30 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+22:08:33 **** Incremental Build of configuration Debug for project To_count_obj_created_on_heap ****
+make all 
+make: Nothing to be done for 'all'.
+22:28:52 **** Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str() const’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:20: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  s1.SetString("abc");
+                    ^
+../string_demo.cpp:63:8: warning: unused variable ‘str’ [-Wunused-variable]
+  char* str=s1.GetString();
+        ^~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:29:06 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:30:38 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str() const’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:20: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  s1.SetString("abc");
+                    ^
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:30:40 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:30:49 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:30:51 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:32:56 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:26:13: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   this->str='\0';
+             ^~~~
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str() const’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:20: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  s1.SetString("abc");
+                    ^
+subdir.mk:18: recipe for target 'string_demo.o' failed
+make: *** [string_demo.o] Error 1
+22:33:15 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str() const’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:20: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  s1.SetString("abc");
+                    ^
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:33:19 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:35:01 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:20: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  s1.SetString("abc");
+                    ^
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:35:04 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:42:22 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:9: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *sptr=NULL;
+         ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:53:24: error: ‘str’ was not declared in this scope
+    cout<<"\nString: "<<str;
+                        ^~~
+../string_demo.cpp:53:24: note: suggested alternative: ‘sptr’
+    cout<<"\nString: "<<str;
+                        ^~~
+                        sptr
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:65:17: error: invalid conversion from ‘int’ to ‘char*’ [-fpermissive]
+  str_demo s1(len);
+                 ^
+../string_demo.cpp:29:2: note:   initializing argument 1 of ‘str_demo::str_demo(char*)’
+  str_demo(char *str)
+  ^~~~~~~~
+../string_demo.cpp:67:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+../string_demo.cpp:68:5: error: ‘class str_demo’ has no member named ‘SetString’
+  s1.SetString(name);
+     ^~~~~~~~~
+../string_demo.cpp:69:15: error: ‘class str_demo’ has no member named ‘GetString’
+  char* str=s1.GetString();
+               ^~~~~~~~~
+make: *** [string_demo.o] Error 1
+subdir.mk:18: recipe for target 'string_demo.o' failed
+22:45:18 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:45:21 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:47:48 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char*)’:
+../string_demo.cpp:35:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(demo);i++)
+               ~^~~~~~~~~~~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+../string_demo.cpp:63:20: error: no matching function for call to ‘str_demo::SetString(char**)’
+  s1.SetString(&name);
+                    ^
+../string_demo.cpp:33:7: note: candidate: void str_demo::SetString(char*)
+  void SetString(char *demo)
+       ^~~~~~~~~
+../string_demo.cpp:33:7: note:   no known conversion for argument 1 from ‘char**’ to ‘char*’
+subdir.mk:18: recipe for target 'string_demo.o' failed
+make: *** [string_demo.o] Error 1
+22:48:56 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:48:59 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:35 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:49:37 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:48 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:13 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:62:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:50:21 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:27 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:42 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp:74:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:46:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:51:45 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:50 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:52:15 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp:76:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:30:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:48:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:52:18 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:53:54 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp:78:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:32:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:53:56 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:54:34 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp:78:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In constructor ‘str_demo::str_demo(int)’:
+../string_demo.cpp:32:9: warning: unused variable ‘str’ [-Wunused-variable]
+   char *str=new char[this->length + 1];
+         ^~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:54:36 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:57:18 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:69:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+22:57:20 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:57:26 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:57:29 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+22:57:35 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:02 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:69:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:00:07 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:11 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:48 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:52 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:56 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:02 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:08 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:12 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:15 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:22 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:26 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:32 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:33 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:33 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:34 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:35 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:02:41 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:02:44 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:02 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:05 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:09 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:16 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:22 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:32 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:06:37 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::SetString(char**)’:
+../string_demo.cpp:38:23: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+    this->str[i]=demo[i];
+                 ~~~~~~^
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+../string_demo.cpp:75:19: error: no matching function for call to ‘str_demo::SetString(char*&)’
+  s1.SetString(name);
+                   ^
+../string_demo.cpp:35:7: note: candidate: void str_demo::SetString(char**)
+  void SetString(char **demo)
+       ^~~~~~~~~
+../string_demo.cpp:35:7: note:   no known conversion for argument 1 from ‘char*’ to ‘char**’
+make: *** [string_demo.o] Error 1
+subdir.mk:18: recipe for target 'string_demo.o' failed
+23:08:57 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:09:03 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:09:39 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:09:41 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:09:46 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:09:51 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:10:20 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In member function ‘void str_demo::Display_str()’:
+../string_demo.cpp:50:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<strlen(this->str);i++)
+               ~^~~~~~~~~~~~~~~~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+../string_demo.cpp:76:8: warning: unused variable ‘str1’ [-Wunused-variable]
+  char* str1=s1.GetString();
+        ^~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:10:25 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:11:13 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mang";
+             ^~~~~~
+../string_demo.cpp:76:8: warning: unused variable ‘str1’ [-Wunused-variable]
+  char* str1=s1.GetString();
+        ^~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:11:17 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:12:39 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+../string_demo.cpp:76:8: warning: unused variable ‘str1’ [-Wunused-variable]
+  char* str1=s1.GetString();
+        ^~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:12:42 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:13:02 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+../string_demo.cpp:76:8: warning: unused variable ‘str1’ [-Wunused-variable]
+  char* str1=s1.GetString();
+        ^~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:13:04 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:14:17 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:74:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:14:20 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:15:06 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:71:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:15:08 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:15:39 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:71:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:15:42 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:15:59 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:72:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:16:01 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:17:05 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:75:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:17:08 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:17:39 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:75:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:17:42 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:17:56 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:75:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:17:58 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:04 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:11 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:16 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:20 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:22 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.
+23:19:14 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+Building file: ../string_demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"string_demo.d" -MT"string_demo.o" -o "string_demo.o" "../string_demo.cpp"
+../string_demo.cpp: In constructor ‘str_demo::str_demo()’:
+../string_demo.cpp:27:8: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+   *str=NULL;
+        ^~~~
+../string_demo.cpp: In function ‘int main()’:
+../string_demo.cpp:75:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *name="mangesh";
+             ^~~~~~~~~
+Finished building: ../string_demo.cpp
+ 
+Building target: String_dynamic_allocation_deep_copy
+Invoking: GCC C++ Linker
+g++  -o "String_dynamic_allocation_deep_copy"  ./string_demo.o   
+Finished building target: String_dynamic_allocation_deep_copy
+ 
+23:19:16 **** Incremental Build of configuration Debug for project String_dynamic_allocation_deep_copy ****
+make all 
+make: Nothing to be done for 'all'.

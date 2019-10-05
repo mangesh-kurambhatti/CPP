@@ -1,0 +1,98 @@
+/*
+ * inheritance.cpp
+ *
+ *  Created on: 11-Mar-2019
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+class Person{
+private:
+		string name;
+		int age;
+
+public:
+		Person(void)
+		{
+			cout<<"Person(void)"<<endl;
+			cout<<"	Person(void)"<<endl;
+			this->name="";
+			this->age=0;
+		}
+
+		Person(string name,int age)
+		{
+			cout<<"Person(string name,int age)"<<endl;
+			cout<<"	Person(string name,int age)"<<endl;
+			this->name=name;
+			this->age=age;
+
+		}
+
+		void ShowRecord(void)
+		{
+
+		cout<<"Name	:	"<<this->name<<endl;
+		cout<<"Age	:	"<<this->age<<endl;
+		}
+
+		void PrintRecord()
+		{
+			cout<<"Name	:	"<<this->name<<endl;
+			cout<<"Age	:	"<<this->age<<endl;
+		}
+
+};
+
+class Employee : public Person
+{
+private:
+		int empid;
+		float salary;
+public:
+		Employee(void)
+		{
+			cout<<"Employee(void)"<<endl;
+			this->empid=0;
+			this->salary=0.0;
+		}
+
+		Employee(int empid,float salary)
+		{
+			cout<<"Employee(int name,int age,int empid,float salary)"<<endl;
+			this->empid=empid;
+			this->salary=salary;
+
+		}
+
+		void DisplayRecord(void)
+		{
+
+			this->ShowRecord();
+			cout<<"Empid	:	"<<this->empid<<endl;
+			cout<<"Salary	:	"<<this->salary<<endl;
+		}
+
+		void PrintRecord(void)
+		{
+			Person::PrintRecord();
+			cout<<"Empid 	:	"<<this->empid<<endl;
+			cout<<"Salary	:	"<<this->salary<<endl;
+
+		}
+};
+int main()
+{
+	Employee e();
+
+
+	//e.Person::PrintRecord();
+	//e.PrintRecord();
+
+	return 0;
+}
+

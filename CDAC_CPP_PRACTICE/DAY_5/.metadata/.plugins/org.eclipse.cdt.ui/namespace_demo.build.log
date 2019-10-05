@@ -1,0 +1,15 @@
+17:29:57 **** Build of configuration Debug for project namespace_demo ****
+make all 
+Building file: ../demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"demo.d" -MT"demo.o" -o "demo.o" "../demo.cpp"
+Finished building: ../demo.cpp
+ 
+Building target: namespace_demo
+Invoking: GCC C++ Linker
+g++  -o "namespace_demo"  ./demo.o   
+Finished building target: namespace_demo
+ 
+
+17:29:58 Build Finished. 0 errors, 0 warnings. (took 669ms)
+

@@ -1,0 +1,6 @@
+15:36:35 **** Incremental Build of configuration Debug for project Day_6.3_static_variable ****
+make all 
+make: Nothing to be done for 'all'.
+
+15:36:35 Build Finished. 0 errors, 0 warnings. (took 471ms)
+

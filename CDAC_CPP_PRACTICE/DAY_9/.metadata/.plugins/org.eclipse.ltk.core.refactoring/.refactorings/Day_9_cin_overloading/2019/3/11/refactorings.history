@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Day_9_cin_overloading/cin_overloading&apos; to &apos;cin_overloading.cpp&apos;" description="Rename resource &apos;cin_overloading&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="cin_overloading" name="cin_overloading.cpp" stamp="1552469396135" updateReferences="true"/>
+</session>

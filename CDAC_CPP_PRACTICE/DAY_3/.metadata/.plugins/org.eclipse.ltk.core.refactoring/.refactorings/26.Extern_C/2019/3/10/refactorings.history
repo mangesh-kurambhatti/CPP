@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;26.Extern_C/src/26.Extern_C.cpp&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;26.Extern_C.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/26.Extern_C.cpp" name="main.cpp" stamp="1551877584190" updateReferences="true"/>
+</session>

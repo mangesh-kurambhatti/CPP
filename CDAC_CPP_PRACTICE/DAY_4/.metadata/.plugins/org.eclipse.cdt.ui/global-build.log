@@ -1,0 +1,873 @@
+15:03:20 **** Build of configuration Debug for project Day_4.9 ****
+make all 
+Building file: ../allocating_mem_to_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocating_mem_to_array.d" -MT"allocating_mem_to_array.o" -o "allocating_mem_to_array.o" "../allocating_mem_to_array.cpp"
+Finished building: ../allocating_mem_to_array.cpp
+ 
+Building target: Day_4.9
+Invoking: GCC C++ Linker
+g++  -o "Day_4.9"  ./allocating_mem_to_array.o   
+Finished building target: Day_4.9
+ 
+15:03:33 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+make: Nothing to be done for 'all'.
+15:04:52 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+Building file: ../allocating_mem_to_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocating_mem_to_array.d" -MT"allocating_mem_to_array.o" -o "allocating_mem_to_array.o" "../allocating_mem_to_array.cpp"
+Finished building: ../allocating_mem_to_array.cpp
+ 
+Building target: Day_4.9
+Invoking: GCC C++ Linker
+g++  -o "Day_4.9"  ./allocating_mem_to_array.o   
+Finished building target: Day_4.9
+ 
+15:04:54 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:29 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+Building file: ../allocating_mem_to_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocating_mem_to_array.d" -MT"allocating_mem_to_array.o" -o "allocating_mem_to_array.o" "../allocating_mem_to_array.cpp"
+Finished building: ../allocating_mem_to_array.cpp
+ 
+Building target: Day_4.9
+Invoking: GCC C++ Linker
+g++  -o "Day_4.9"  ./allocating_mem_to_array.o   
+Finished building target: Day_4.9
+ 
+15:05:30 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+make: Nothing to be done for 'all'.
+15:06:52 **** Incremental Build of configuration Debug for project Day_4.9 ****
+make all 
+Building file: ../allocating_mem_to_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocating_mem_to_array.d" -MT"allocating_mem_to_array.o" -o "allocating_mem_to_array.o" "../allocating_mem_to_array.cpp"
+Finished building: ../allocating_mem_to_array.cpp
+ 
+Building target: Day_4.9
+Invoking: GCC C++ Linker
+g++  -o "Day_4.9"  ./allocating_mem_to_array.o   
+Finished building target: Day_4.9
+ 
+15:13:27 **** Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:12:5: error: cannot declare ‘::main’ to be a global variable
+ int main
+     ^~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:2: error: expected primary-expression before ‘int’
+  int a=100000;
+  ^~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:2: error: expected ‘}’ before ‘int’
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:16:25: error: ‘a’ was not declared in this scope
+  int *ptr=(int *)malloc(a*sizeof(int));
+                         ^
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:18:2: error: expected unqualified-id before ‘if’
+  if(ptr != NULL)
+  ^~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:23:1: error: expected unqualified-id before ‘return’
+ return 0;
+ ^~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+subdir.mk:18: recipe for target 'checking_malloc_returning_null_and_new_return_bad_alloc.o' failed
+make: *** [checking_malloc_returning_null_and_new_return_bad_alloc.o] Error 1
+15:14:14 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:14:30 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:14:38 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:14:43 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:14:53 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=100000000000;
+        ^~~~~~~~~~~~
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:14:58 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:15:11 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000;
+        ^~~~~~~~~~~~~~~~~
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:15:26 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:16:14 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000;
+        ^~~~~~~~~~~~~~~~~
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:16:16 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:16:26 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: integer constant is too large for its type
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: overflow in implicit constant conversion [-Woverflow]
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:16:28 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:18:43 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: integer constant is too large for its type
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:26:8: warning: integer constant is too large for its type
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main1()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:26:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:18:47 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:26:00 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: integer constant is too large for its type
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:26:8: warning: integer constant is too large for its type
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:14:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main1()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:26:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:26:02 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:27:37 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+Building file: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"checking_malloc_returning_null_and_new_return_bad_alloc.d" -MT"checking_malloc_returning_null_and_new_return_bad_alloc.o" -o "checking_malloc_returning_null_and_new_return_bad_alloc.o" "../checking_malloc_returning_null_and_new_return_bad_alloc.cpp"
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:16:10: warning: integer constant is too large for its type
+    int a=10000000000000000000000;
+          ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:33:8: warning: integer constant is too large for its type
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:16:10: warning: overflow in implicit constant conversion [-Woverflow]
+    int a=10000000000000000000000;
+          ^~~~~~~~~~~~~~~~~~~~~~~
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp: In function ‘int main1()’:
+../checking_malloc_returning_null_and_new_return_bad_alloc.cpp:33:8: warning: overflow in implicit constant conversion [-Woverflow]
+  int a=10000000000000000000000;
+        ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../checking_malloc_returning_null_and_new_return_bad_alloc.cpp
+ 
+Building target: Day_4.10
+Invoking: GCC C++ Linker
+g++  -o "Day_4.10"  ./checking_malloc_returning_null_and_new_return_bad_alloc.o   
+Finished building target: Day_4.10
+ 
+15:27:40 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:36:48 **** Build of configuration Debug for project Day_4.11 ****
+make all 
+Building file: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"malloc_dont_call_ctor_and_new_call_ctr.d" -MT"malloc_dont_call_ctor_and_new_call_ctr.o" -o "malloc_dont_call_ctor_and_new_call_ctr.o" "../malloc_dont_call_ctor_and_new_call_ctr.cpp"
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:32:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr =(Complex *)malloc (sizeof(Complex));
+           ^~~
+Finished building: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+ 
+Building target: Day_4.11
+Invoking: GCC C++ Linker
+g++  -o "Day_4.11"  ./malloc_dont_call_ctor_and_new_call_ctr.o   
+Finished building target: Day_4.11
+ 
+15:37:01 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:08 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:11 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:54 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+Building file: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"malloc_dont_call_ctor_and_new_call_ctr.d" -MT"malloc_dont_call_ctor_and_new_call_ctr.o" -o "malloc_dont_call_ctor_and_new_call_ctr.o" "../malloc_dont_call_ctor_and_new_call_ctr.cpp"
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:32:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr=new Complex();
+           ^~~
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main1()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:41:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr =(Complex *)malloc (sizeof(Complex));
+           ^~~
+Finished building: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+ 
+Building target: Day_4.11
+Invoking: GCC C++ Linker
+g++  -o "Day_4.11"  ./malloc_dont_call_ctor_and_new_call_ctr.o   
+Finished building target: Day_4.11
+ 
+15:37:58 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+make: Nothing to be done for 'all'.
+15:38:15 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+Building file: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"malloc_dont_call_ctor_and_new_call_ctr.d" -MT"malloc_dont_call_ctor_and_new_call_ctr.o" -o "malloc_dont_call_ctor_and_new_call_ctr.o" "../malloc_dont_call_ctor_and_new_call_ctr.cpp"
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main1()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:41:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr =(Complex *)malloc (sizeof(Complex));
+           ^~~
+Finished building: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+ 
+Building target: Day_4.11
+Invoking: GCC C++ Linker
+g++  -o "Day_4.11"  ./malloc_dont_call_ctor_and_new_call_ctr.o   
+Finished building target: Day_4.11
+ 
+15:38:18 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+make: Nothing to be done for 'all'.
+15:40:35 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+Building file: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"malloc_dont_call_ctor_and_new_call_ctr.d" -MT"malloc_dont_call_ctor_and_new_call_ctr.o" -o "malloc_dont_call_ctor_and_new_call_ctr.o" "../malloc_dont_call_ctor_and_new_call_ctr.cpp"
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main1()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:45:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr =(Complex *)malloc (sizeof(Complex));
+           ^~~
+Finished building: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+ 
+Building target: Day_4.11
+Invoking: GCC C++ Linker
+g++  -o "Day_4.11"  ./malloc_dont_call_ctor_and_new_call_ctr.o   
+Finished building target: Day_4.11
+ 
+15:40:38 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+make: Nothing to be done for 'all'.
+15:50:50 **** Build of configuration Debug for project Day_4.12 ****
+make all 
+Building file: ../allocate_mem_to_2-D_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocate_mem_to_2-D_array.d" -MT"allocate_mem_to_2-D_array.o" -o "allocate_mem_to_2-D_array.o" "../allocate_mem_to_2-D_array.cpp"
+../allocate_mem_to_2-D_array.cpp: In function ‘int main()’:
+../allocate_mem_to_2-D_array.cpp:19:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+subdir.mk:18: recipe for target 'allocate_mem_to_2-D_array.o' failed
+make: *** [allocate_mem_to_2-D_array.o] Error 1
+15:51:02 **** Incremental Build of configuration Debug for project Day_4.12 ****
+make all 
+Building file: ../allocate_mem_to_2-D_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocate_mem_to_2-D_array.d" -MT"allocate_mem_to_2-D_array.o" -o "allocate_mem_to_2-D_array.o" "../allocate_mem_to_2-D_array.cpp"
+Finished building: ../allocate_mem_to_2-D_array.cpp
+ 
+Building target: Day_4.12
+Invoking: GCC C++ Linker
+g++  -o "Day_4.12"  ./allocate_mem_to_2-D_array.o   
+Finished building target: Day_4.12
+ 
+15:52:32 **** Incremental Build of configuration Debug for project Day_4.12 ****
+make all 
+Building file: ../allocate_mem_to_2-D_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocate_mem_to_2-D_array.d" -MT"allocate_mem_to_2-D_array.o" -o "allocate_mem_to_2-D_array.o" "../allocate_mem_to_2-D_array.cpp"
+Finished building: ../allocate_mem_to_2-D_array.cpp
+ 
+Building target: Day_4.12
+Invoking: GCC C++ Linker
+g++  -o "Day_4.12"  ./allocate_mem_to_2-D_array.o   
+Finished building target: Day_4.12
+ 
+15:58:28 **** Incremental Build of configuration Debug for project Day_4.12 ****
+make all 
+Building file: ../allocate_mem_to_2-D_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocate_mem_to_2-D_array.d" -MT"allocate_mem_to_2-D_array.o" -o "allocate_mem_to_2-D_array.o" "../allocate_mem_to_2-D_array.cpp"
+Finished building: ../allocate_mem_to_2-D_array.cpp
+ 
+Building target: Day_4.12
+Invoking: GCC C++ Linker
+g++  -o "Day_4.12"  ./allocate_mem_to_2-D_array.o   
+Finished building target: Day_4.12
+ 
+15:59:35 **** Incremental Build of configuration Debug for project Day_4.12 ****
+make all 
+Building file: ../allocate_mem_to_2-D_array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"allocate_mem_to_2-D_array.d" -MT"allocate_mem_to_2-D_array.o" -o "allocate_mem_to_2-D_array.o" "../allocate_mem_to_2-D_array.cpp"
+Finished building: ../allocate_mem_to_2-D_array.cpp
+ 
+Building target: Day_4.12
+Invoking: GCC C++ Linker
+g++  -o "Day_4.12"  ./allocate_mem_to_2-D_array.o   
+Finished building target: Day_4.12
+ 
+16:03:43 **** Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+../FreeStore.cpp: In function ‘int main()’:
+../FreeStore.cpp:17:26: error: no match for ‘operator<’ (operand types are ‘std::basic_ostream<char>’ and ‘<unresolved overloaded function type>’)
+  cout<<"Name is ::"<<name<endl;
+  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/stl_pair.h:449:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:449:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::pair<_T1, _T2>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note: candidate: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note: candidate: template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6085:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6085:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6098:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6098:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6110:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6110:5: note:   template argument deduction/substitution failed:
+../FreeStore.cpp:17:27: note:   mismatched types ‘const _CharT*’ and ‘std::basic_ostream<char>’
+  cout<<"Name is ::"<<name<endl;
+                           ^~~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../FreeStore.cpp:7:
+/usr/include/c++/7/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:208:3: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:282:3: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘const std::error_condition&’
+make: *** [FreeStore.o] Error 1
+subdir.mk:18: recipe for target 'FreeStore.o' failed
+16:04:32 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+16:04:54 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:44 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:05:48 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:05:54 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:13 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:06:16 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:27 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+../FreeStore.cpp: In function ‘int main()’:
+../FreeStore.cpp:18:7: warning: unused variable ‘ptr’ [-Wunused-variable]
+  int *ptr=new (name)int(65);
+       ^~~
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:06:31 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:53 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:06:57 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:18 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:07:21 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:08:12 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:08:15 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:02 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:10:06 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:46 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:10:50 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:23 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:11:26 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:05 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:12:10 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:12 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:16 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:14:34 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:14:37 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:48 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:01 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:15:05 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:36 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:15:38 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:06 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:16:09 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:51 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:16:54 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:26 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+Building file: ../FreeStore.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FreeStore.d" -MT"FreeStore.o" -o "FreeStore.o" "../FreeStore.cpp"
+Finished building: ../FreeStore.cpp
+ 
+Building target: Day_4.13
+Invoking: GCC C++ Linker
+g++  -o "Day_4.13"  ./FreeStore.o   
+Finished building target: Day_4.13
+ 
+17:18:28 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.
+15:31:01 **** Incremental Build of configuration Debug for project Day_4.10 ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:02 **** Incremental Build of configuration Debug for project Day_4.11 ****
+make all 
+Building file: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"malloc_dont_call_ctor_and_new_call_ctr.d" -MT"malloc_dont_call_ctor_and_new_call_ctr.o" -o "malloc_dont_call_ctor_and_new_call_ctr.o" "../malloc_dont_call_ctor_and_new_call_ctr.cpp"
+../malloc_dont_call_ctor_and_new_call_ctr.cpp: In function ‘int main1()’:
+../malloc_dont_call_ctor_and_new_call_ctr.cpp:45:11: warning: unused variable ‘ptr’ [-Wunused-variable]
+  Complex *ptr =(Complex *)malloc (sizeof(Complex));
+           ^~~
+Finished building: ../malloc_dont_call_ctor_and_new_call_ctr.cpp
+ 
+Building target: Day_4.11
+Invoking: GCC C++ Linker
+g++  -o "Day_4.11"  ./malloc_dont_call_ctor_and_new_call_ctr.o   
+Finished building target: Day_4.11
+ 
+16:07:31 **** Incremental Build of configuration Debug for project Day_4.13 ****
+make all 
+make: Nothing to be done for 'all'.

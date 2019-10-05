@@ -1,0 +1,1264 @@
+17:29:16 **** Build of configuration Debug for project Day_5.6_Can't_have_different_namespace ****
+make all 
+/bin/sh: 1: Syntax error: Unterminated quoted string
+subdir.mk:18: recipe for target 'Friend_fun_can't_be_outside_namespace.o' failed
+make: *** [Friend_fun_can't_be_outside_namespace.o] Error 2
+
+17:29:16 Build Failed. 2 errors, 0 warnings. (took 370ms)
+
+17:29:57 **** Incremental Build of configuration Debug for project Day_5.6_Can't_have_different_namespace ****
+make all 
+/bin/sh: 1: Syntax error: Unterminated quoted string
+subdir.mk:18: recipe for target 'Friend_fun_can't_be_outside_namespace.o' failed
+make: *** [Friend_fun_can't_be_outside_namespace.o] Error 2
+17:29:57 **** Build of configuration Debug for project namespace_demo ****
+make all 
+Building file: ../demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"demo.d" -MT"demo.o" -o "demo.o" "../demo.cpp"
+Finished building: ../demo.cpp
+ 
+Building target: namespace_demo
+Invoking: GCC C++ Linker
+g++  -o "namespace_demo"  ./demo.o   
+Finished building target: namespace_demo
+ 
+17:31:39 **** Clean-only build of configuration Debug for project Day_5.6_Friend_Function_should_be_in_namespace ****
+make clean 
+rm -rf  ./demo.o  ./demo.d  namespace_demo
+ 
+17:31:39 **** Build of configuration Debug for project Day_5.6_Friend_Function_should_be_in_namespace ****
+make all 
+Building file: ../demo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"demo.d" -MT"demo.o" -o "demo.o" "../demo.cpp"
+Finished building: ../demo.cpp
+ 
+Building target: Day_5.6_Friend_Function_should_be_in_namespace
+Invoking: GCC C++ Linker
+g++  -o "Day_5.6_Friend_Function_should_be_in_namespace"  ./demo.o   
+Finished building target: Day_5.6_Friend_Function_should_be_in_namespace
+ 
+17:31:55 **** Incremental Build of configuration Debug for project Day_5.6_Friend_Function_should_be_in_namespace ****
+make all 
+make: Nothing to be done for 'all'.
+17:36:05 **** Build of configuration Debug for project Day_5.7_Friend_function_from_multiple_classes ****
+make all 
+Building file: ../Friend_function_from_multiple_classes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Friend_function_from_multiple_classes.d" -MT"Friend_function_from_multiple_classes.o" -o "Friend_function_from_multiple_classes.o" "../Friend_function_from_multiple_classes.cpp"
+Finished building: ../Friend_function_from_multiple_classes.cpp
+ 
+Building target: Day_5.7_Friend_function_from_multiple_classes
+Invoking: GCC C++ Linker
+g++  -o "Day_5.7_Friend_function_from_multiple_classes"  ./Friend_function_from_multiple_classes.o   
+Finished building target: Day_5.7_Friend_function_from_multiple_classes
+ 
+17:36:36 **** Incremental Build of configuration Debug for project Day_5.7_Friend_function_from_multiple_classes ****
+make all 
+make: Nothing to be done for 'all'.
+17:36:54 **** Incremental Build of configuration Debug for project Day_5.7_Friend_function_from_multiple_classes ****
+make all 
+make: Nothing to be done for 'all'.
+17:43:34 **** Build of configuration Debug for project Day_5.8_friend_class ****
+make all 
+Building file: ../Friend_classes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Friend_classes.d" -MT"Friend_classes.o" -o "Friend_classes.o" "../Friend_classes.cpp"
+../Friend_classes.cpp:20:1: error: new types may not be defined in a return type
+ class B
+ ^~~~~
+../Friend_classes.cpp:20:1: note: (perhaps a semicolon is missing after the definition of ‘B’)
+../Friend_classes.cpp:31:10: error: return type specification for constructor invalid
+ B::B(void)
+          ^
+../Friend_classes.cpp:31:1: error: redefinition of ‘B::B()’
+ B::B(void)
+ ^
+../Friend_classes.cpp:26:2: note: ‘B::B()’ previously defined here
+  B(void)
+  ^
+../Friend_classes.cpp: In member function ‘void A::add()’:
+../Friend_classes.cpp:41:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:41:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:41:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:41:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+../Friend_classes.cpp: In member function ‘void A::sub()’:
+../Friend_classes.cpp:48:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:48:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:48:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:48:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+../Friend_classes.cpp: In member function ‘void A::mul()’:
+../Friend_classes.cpp:55:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:55:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:55:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:55:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+make: *** [Friend_classes.o] Error 1
+subdir.mk:18: recipe for target 'Friend_classes.o' failed
+17:43:52 **** Incremental Build of configuration Debug for project Day_5.8_friend_class ****
+make all 
+Building file: ../Friend_classes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Friend_classes.d" -MT"Friend_classes.o" -o "Friend_classes.o" "../Friend_classes.cpp"
+../Friend_classes.cpp:31:1: error: redefinition of ‘B::B()’
+ B::B(void)
+ ^
+../Friend_classes.cpp:26:2: note: ‘B::B()’ previously defined here
+  B(void)
+  ^
+../Friend_classes.cpp: In member function ‘void A::add()’:
+../Friend_classes.cpp:41:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:41:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:41:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:41:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+../Friend_classes.cpp: In member function ‘void A::sub()’:
+../Friend_classes.cpp:48:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:48:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:48:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:48:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+../Friend_classes.cpp: In member function ‘void A::mul()’:
+../Friend_classes.cpp:55:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:55:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:55:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:55:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+subdir.mk:18: recipe for target 'Friend_classes.o' failed
+make: *** [Friend_classes.o] Error 1
+17:45:00 **** Incremental Build of configuration Debug for project Day_5.8_friend_class ****
+make all 
+Building file: ../Friend_classes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Friend_classes.d" -MT"Friend_classes.o" -o "Friend_classes.o" "../Friend_classes.cpp"
+../Friend_classes.cpp: In member function ‘void A::add()’:
+../Friend_classes.cpp:40:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:40:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:40:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:40:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+../Friend_classes.cpp: In member function ‘void A::sub()’:
+../Friend_classes.cpp:47:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:47:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:47:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:47:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+../Friend_classes.cpp: In member function ‘void A::mul()’:
+../Friend_classes.cpp:54:2: error: ‘cout’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+  ^~~~
+../Friend_classes.cpp:54:2: note: suggested alternative:
+In file included from ../Friend_classes.cpp:9:0:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../Friend_classes.cpp:54:27: error: ‘endl’ was not declared in this scope
+  cout<<"Sum of "<<result<<endl;
+                           ^~~~
+../Friend_classes.cpp:54:27: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../Friend_classes.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+make: *** [Friend_classes.o] Error 1
+subdir.mk:18: recipe for target 'Friend_classes.o' failed
+17:45:15 **** Incremental Build of configuration Debug for project Day_5.8_friend_class ****
+make all 
+Building file: ../Friend_classes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Friend_classes.d" -MT"Friend_classes.o" -o "Friend_classes.o" "../Friend_classes.cpp"
+Finished building: ../Friend_classes.cpp
+ 
+Building target: Day_5.8_friend_class
+Invoking: GCC C++ Linker
+g++  -o "Day_5.8_friend_class"  ./Friend_classes.o   
+Finished building target: Day_5.8_friend_class
+ 
+17:45:27 **** Incremental Build of configuration Debug for project Day_5.8_friend_class ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:22 **** Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+../Copy_ctor.cpp: In member function ‘void Complex::Print()’:
+../Copy_ctor.cpp:23:38: error: expected primary-expression before ‘;’ token
+   cout<<"Real===>"<<this->Real<<endl>;
+                                      ^
+../Copy_ctor.cpp:25:38: error: expected primary-expression before ‘;’ token
+   cout<<"Imag===>"<<this->Imag<<endl>;
+                                      ^
+make: *** [Copy_ctor.o] Error 1
+subdir.mk:18: recipe for target 'Copy_ctor.o' failed
+18:32:33 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+18:32:48 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+18:33:20 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+18:33:22 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+18:33:23 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+18:33:28 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+18:36:55 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+../Copy_ctor.cpp: In member function ‘Complex Complex::sum(Complex)’:
+../Copy_ctor.cpp:31:11: error: no matching function for call to ‘Complex::Complex()’
+   Complex result;
+           ^~~~~~
+../Copy_ctor.cpp:18:2: note: candidate: Complex::Complex(int, int)
+  Complex(int real,int imag):Real(real),Imag(imag)
+  ^~~~~~~
+../Copy_ctor.cpp:18:2: note:   candidate expects 2 arguments, 0 provided
+../Copy_ctor.cpp:11:7: note: candidate: constexpr Complex::Complex(const Complex&)
+ class Complex
+       ^~~~~~~
+../Copy_ctor.cpp:11:7: note:   candidate expects 1 argument, 0 provided
+../Copy_ctor.cpp:11:7: note: candidate: constexpr Complex::Complex(Complex&&)
+../Copy_ctor.cpp:11:7: note:   candidate expects 1 argument, 0 provided
+subdir.mk:18: recipe for target 'Copy_ctor.o' failed
+make: *** [Copy_ctor.o] Error 1
+18:41:08 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+../Copy_ctor.cpp: In function ‘int main()’:
+../Copy_ctor.cpp:50:10: warning: variable ‘c3’ set but not used [-Wunused-but-set-variable]
+  Complex c3=c1.sum(c2);
+          ^~
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+18:42:21 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+18:42:26 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+18:44:08 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+19:19:39 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+Building file: ../Copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Copy_ctor.d" -MT"Copy_ctor.o" -o "Copy_ctor.o" "../Copy_ctor.cpp"
+Finished building: ../Copy_ctor.cpp
+ 
+Building target: Day_5.13_Copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "Day_5.13_Copy_constructor"  ./Copy_ctor.o   
+Finished building target: Day_5.13_Copy_constructor
+ 
+19:19:43 **** Incremental Build of configuration Debug for project Day_5.13_Copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:42 **** Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+Finished building: ../copy_ctor.cpp
+ 
+Building target: prasad_copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "prasad_copy_constructor"  ./copy_ctor.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'prasad_copy_constructor' failed
+make: *** [prasad_copy_constructor] Error 1
+19:32:27 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+Finished building: ../copy_ctor.cpp
+ 
+Building target: prasad_copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "prasad_copy_constructor"  ./copy_ctor.o   
+Finished building target: prasad_copy_constructor
+ 
+19:32:48 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+19:32:55 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+19:32:56 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:41 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+Finished building: ../copy_ctor.cpp
+ 
+Building target: prasad_copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "prasad_copy_constructor"  ./copy_ctor.o   
+Finished building target: prasad_copy_constructor
+ 
+19:36:42 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+19:37:37 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+Finished building: ../copy_ctor.cpp
+ 
+Building target: prasad_copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "prasad_copy_constructor"  ./copy_ctor.o   
+Finished building target: prasad_copy_constructor
+ 
+19:37:38 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+19:58:20 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In member function ‘complex complex::sum(complex)’:
+../copy_ctor.cpp:36:10: error: no matching function for call to ‘complex::complex()’
+  complex result;
+          ^~~~~~
+../copy_ctor.cpp:23:2: note: candidate: complex::complex(const complex&)
+  complex( const complex &z1)
+  ^~~~~~~
+../copy_ctor.cpp:23:2: note:   candidate expects 1 argument, 0 provided
+../copy_ctor.cpp:19:2: note: candidate: complex::complex(int, int)
+  complex (int real, int imag):real(real),imag(imag)
+  ^~~~~~~
+../copy_ctor.cpp:19:2: note:   candidate expects 2 arguments, 0 provided
+../copy_ctor.cpp:39:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [copy_ctor.o] Error 1
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+19:58:20 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In member function ‘complex complex::sum(complex)’:
+../copy_ctor.cpp:36:10: error: no matching function for call to ‘complex::complex()’
+  complex result;
+          ^~~~~~
+../copy_ctor.cpp:23:2: note: candidate: complex::complex(const complex&)
+  complex( const complex &z1)
+  ^~~~~~~
+../copy_ctor.cpp:23:2: note:   candidate expects 1 argument, 0 provided
+../copy_ctor.cpp:19:2: note: candidate: complex::complex(int, int)
+  complex (int real, int imag):real(real),imag(imag)
+  ^~~~~~~
+../copy_ctor.cpp:19:2: note:   candidate expects 2 arguments, 0 provided
+../copy_ctor.cpp:39:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+make: *** [copy_ctor.o] Error 1
+19:59:06 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In member function ‘complex complex::sum(complex)’:
+../copy_ctor.cpp:36:10: error: no matching function for call to ‘complex::complex()’
+  complex result;
+          ^~~~~~
+../copy_ctor.cpp:23:2: note: candidate: complex::complex(const complex&)
+  complex( const complex &z1)
+  ^~~~~~~
+../copy_ctor.cpp:23:2: note:   candidate expects 1 argument, 0 provided
+../copy_ctor.cpp:19:2: note: candidate: complex::complex(int, int)
+  complex (int real, int imag):real(real),imag(imag)
+  ^~~~~~~
+../copy_ctor.cpp:19:2: note:   candidate expects 2 arguments, 0 provided
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+make: *** [copy_ctor.o] Error 1
+19:59:11 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In member function ‘complex complex::sum(complex)’:
+../copy_ctor.cpp:36:10: error: no matching function for call to ‘complex::complex()’
+  complex result;
+          ^~~~~~
+../copy_ctor.cpp:23:2: note: candidate: complex::complex(const complex&)
+  complex( const complex &z1)
+  ^~~~~~~
+../copy_ctor.cpp:23:2: note:   candidate expects 1 argument, 0 provided
+../copy_ctor.cpp:19:2: note: candidate: complex::complex(int, int)
+  complex (int real, int imag):real(real),imag(imag)
+  ^~~~~~~
+../copy_ctor.cpp:19:2: note:   candidate expects 2 arguments, 0 provided
+make: *** [copy_ctor.o] Error 1
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+20:00:51 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+Finished building: ../copy_ctor.cpp
+ 
+Building target: prasad_copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "prasad_copy_constructor"  ./copy_ctor.o   
+Finished building target: prasad_copy_constructor
+ 
+20:00:53 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:29 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In function ‘int main()’:
+../copy_ctor.cpp:56:18: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘void’)
+  cout<<"Sum===>>"<<c3.print();
+  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/7/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/7/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/7/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/7/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/7/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/7/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/7/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/7/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/7/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/basic_string.h:6275:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6275:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:29: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+  cout<<"Sum===>>"<<c3.print();
+                             ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+/usr/include/c++/7/system_error:217:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const std::error_code&’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:497:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:29: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+  cout<<"Sum===>>"<<c3.print();
+                             ^
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:502:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:508:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:514:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘signed char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:519:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘unsigned char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:539:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:29: note:   mismatched types ‘const _CharT*’ and ‘void’
+  cout<<"Sum===>>"<<c3.print();
+                             ^
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:556:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:569:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const signed char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:574:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const unsigned char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:682:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:682:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = void]’:
+../copy_ctor.cpp:56:29:   required from here
+/usr/include/c++/7/ostream:682:5: error: forming reference to void
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+make: *** [copy_ctor.o] Error 1
+20:01:32 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In function ‘int main()’:
+../copy_ctor.cpp:56:18: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘void’)
+  cout<<"Sum===>>"<<c3.print();
+  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/7/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/7/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/7/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/7/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/7/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/7/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/7/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/7/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/7/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/basic_string.h:6275:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6275:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:29: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+  cout<<"Sum===>>"<<c3.print();
+                             ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+/usr/include/c++/7/system_error:217:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const std::error_code&’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:497:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:29: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+  cout<<"Sum===>>"<<c3.print();
+                             ^
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:502:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:508:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:514:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘signed char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:519:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘unsigned char’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:539:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:29: note:   mismatched types ‘const _CharT*’ and ‘void’
+  cout<<"Sum===>>"<<c3.print();
+                             ^
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:556:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:569:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const signed char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:574:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:28: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const unsigned char*’
+  cout<<"Sum===>>"<<c3.print();
+                    ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:682:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:682:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = void]’:
+../copy_ctor.cpp:56:29:   required from here
+/usr/include/c++/7/ostream:682:5: error: forming reference to void
+make: *** [copy_ctor.o] Error 1
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+20:01:45 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+../copy_ctor.cpp: In function ‘int main()’:
+../copy_ctor.cpp:56:16: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘void’)
+  cout<<"Sum==="<<c3.print();
+  ~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/7/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/7/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/7/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/7/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/7/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/7/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/7/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/7/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/7/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/basic_string.h:6275:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6275:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:27: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+  cout<<"Sum==="<<c3.print();
+                           ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+/usr/include/c++/7/system_error:217:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const std::error_code&’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:497:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:27: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+  cout<<"Sum==="<<c3.print();
+                           ^
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:502:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘char’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:508:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘char’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:514:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘signed char’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:519:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘unsigned char’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:539:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:27: note:   mismatched types ‘const _CharT*’ and ‘void’
+  cout<<"Sum==="<<c3.print();
+                           ^
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const char*’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:556:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const char*’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:569:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const signed char*’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+/usr/include/c++/7/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:574:5: note:   template argument deduction/substitution failed:
+../copy_ctor.cpp:56:26: note:   cannot convert ‘c3.complex::print()’ (type ‘void’) to type ‘const unsigned char*’
+  cout<<"Sum==="<<c3.print();
+                  ~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../copy_ctor.cpp:11:
+subdir.mk:18: recipe for target 'copy_ctor.o' failed
+/usr/include/c++/7/ostream:682:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:682:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = void]’:
+../copy_ctor.cpp:56:27:   required from here
+/usr/include/c++/7/ostream:682:5: error: forming reference to void
+make: *** [copy_ctor.o] Error 1
+20:02:30 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+Building file: ../copy_ctor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"copy_ctor.d" -MT"copy_ctor.o" -o "copy_ctor.o" "../copy_ctor.cpp"
+Finished building: ../copy_ctor.cpp
+ 
+Building target: prasad_copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "prasad_copy_constructor"  ./copy_ctor.o   
+Finished building target: prasad_copy_constructor
+ 
+20:02:32 **** Incremental Build of configuration Debug for project prasad_copy_constructor ****
+make all 
+make: Nothing to be done for 'all'.
+17:09:07 **** Incremental Build of configuration Debug for project Day_5.4_byDeclaringFunAS_friend_itisNot_memberFunctionOfClass ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:19 **** Incremental Build of configuration Debug for project Day_5.7_Friend_function_from_multiple_classes ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:46 **** Incremental Build of configuration Debug for project Day_5.7_Friend_function_from_multiple_classes ****
+make all 
+make: Nothing to be done for 'all'.

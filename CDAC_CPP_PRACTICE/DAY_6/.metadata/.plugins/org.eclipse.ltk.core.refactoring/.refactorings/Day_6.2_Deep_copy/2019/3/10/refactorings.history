@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Day_6.2_Deep_copy/shallow_copy.cpp&apos; to &apos;Deep_copy.cpp&apos;" description="Rename resource &apos;shallow_copy.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="shallow_copy.cpp" name="Deep_copy.cpp" stamp="1552122822692" updateReferences="true"/>
+</session>

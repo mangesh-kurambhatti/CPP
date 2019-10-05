@@ -1,0 +1,8 @@
+17:29:57 **** Incremental Build of configuration Debug for project Day_5.6_Can't_have_different_namespace ****
+make all 
+/bin/sh: 1: Syntax error: Unterminated quoted string
+subdir.mk:18: recipe for target 'Friend_fun_can't_be_outside_namespace.o' failed
+make: *** [Friend_fun_can't_be_outside_namespace.o] Error 2
+
+17:29:57 Build Failed. 2 errors, 0 warnings. (took 369ms)
+
